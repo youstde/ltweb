@@ -1,1 +1,498 @@
-<div>我是首页内容部分</div>
+ <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "PingFang SC";
+        }
+
+        ul, ol, dl, li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul, li, ol {
+            list-style: none;
+        }
+
+        .banner ,.banner img{
+            width: 100%;
+            height: 100%;
+            /*height: 425px;*/
+            /*background-color: brown;*/
+        }
+
+        .product {
+            width: 100%;
+            height: 767px;
+        }
+
+        .proSuggest {
+            /*margin-left: 205px;*/
+            margin: 100px auto;
+            margin-top: 100px;
+            width: 1100px;
+            height: 161px;
+            text-align: center;
+            color: #333;
+        }
+
+        .proSuggest h2 {
+            font-size: 30px;
+            /*margin-top: 100px;*/
+        }
+
+        .proSuggest p {
+            font-size: 14px;
+            margin-top: 33px;
+            margin-bottom: 30px;
+            color: #999;
+        }
+
+        .proSuggest .sugDetail {
+            margin-top: 30px;
+            height: 545px;
+        }
+
+        .detLeft {
+            width: 383px;
+            height: 545px;
+            background-color: #fff;
+            float: left;
+            text-align: left;
+        }
+
+        .detLeft .delName {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-top: 65px;
+        }
+
+        .detLeft .delName li {
+            width: 383px;
+            height: 86px;
+            padding-top: 12.5px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            /*border: 1px solid red;*/
+        }
+
+        .detLeft .delName li:hover {
+            border: 1px solid #b2d8ff;
+            box-shadow: 2px 2px 3px #b2d8ff;
+            color: #2b90ed;
+        }
+
+        .detLeft .delName img {
+            width: 61px;
+            height: 61px;
+            margin-left: 61px;
+            vertical-align: middle;
+        }
+
+        .detLeft .delName .moreBtn {
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            border: 2px solid #3388ff;
+            margin-left: 61px;
+            margin-top: 24px;
+        }
+
+        .moreBtn a {
+            color: #3388ff;
+        }
+
+        .detRight, .detTab, .detTab1, .detTab2, .detTab3 {
+            width: 685px;
+            height: 483px;
+            float: left;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: #0e243a;
+            display: none;
+        }
+        .detRight{
+            margin-left: 27px;
+            display: block;
+        }
+        .detRight .detTab{
+            display: block;
+        }
+
+        /*.detRight .bigImg {*/
+            /*margin-top: 58px;*/
+            /*margin-left: 16px;*/
+            /*width: 539px;*/
+            /*height: 401px;*/
+            /*background-size: 642px 394px;*/
+            /*background: url(http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ymBig.png) no-repeat;*/
+            /*margin-top: 58px;*/
+            /*margin-left: 16px;*/
+            /*width: 539px;*/
+            /*height: 401px;*/
+            /*background: url(http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ymBig.png) no-repeat;*/
+            /*background-size: 642px 394px;*/
+        /*}*/
+
+        .detRight .sImg1,.detRight .sImg2,.detRight .sImg1 img, .detRight .sImg2 img{
+            width: 185px;
+            height: 164px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .detTab .bigImg{
+            margin-top: 58px;
+            margin-left: 16px;
+            width: 539px;
+            height: 401px;
+            background: url(http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ymBig.png) no-repeat;
+            background-size: 642px 394px;
+        }
+        .detTab1 .bigImg{
+            margin-top: 58px;
+            margin-left: 16px;
+            width: 539px;
+            height: 401px;
+            background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/viBig.png") no-repeat;
+            background-size: 642px 394px;
+        }
+        .detTab2 .bigImg{
+            margin-top: 58px;
+            margin-left: 16px;
+            width: 573px;
+            height: 401px;
+            background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/jfBig.png") no-repeat;
+            background-size: 642px 394px;
+        }
+        .detTab3 .bigImg{
+            margin-top: 58px;
+            margin-left: 16px;
+            width: 539px;
+            height: 401px;
+            background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sjBig.png") no-repeat;
+            background-size: 642px 394px;
+        }
+        .detRight .sImg1{
+            position: absolute;
+            top: 199px;
+            left: 73px;
+        }
+        .detRight .sImg2{
+            position: absolute;
+            top: 86px;
+            left: 431px;
+        }
+        .detTab1 .sImg1{
+            position: absolute;
+            top: 222px;
+            left: 21px;
+        }
+        .detTab1 .sImg2{
+            position: absolute;
+            top: 51px;
+            left: 467px;
+        }
+        .detTab2 .sImg1{
+            position: absolute;
+            top: 38px;
+            left: 72px;
+        }
+        .detTab2 .sImg2{
+            position: absolute;
+            top: 74px;
+            left: 458px;
+        }
+        .detTab3 .sImg1 {
+            position: absolute;
+            top: 192px;
+            left: 305px;
+            width: 296px;
+            height: 256px;
+        }
+        .detTab3 .sImg1 img{
+            width: 296px;
+            height: 256px;
+        }
+        /*来推云*/
+        .action {
+            padding-top: 86px;
+            width: 100%;
+            height: 767px;
+            background-color: #fafcfe;
+        }
+
+        .actionSuggest {
+            /*margin-left: 205px;*/
+            margin: 0 auto;
+            width: 1100px;
+            height: 161px;
+            text-align: center;
+            color: #333;
+        }
+
+        .actionSuggest h2 {
+            font-size: 30px;
+            /*margin-top: 100px;*/
+        }
+
+        .actionSuggest p {
+            font-size: 14px;
+            margin-top: 33px;
+            margin-bottom: 30px;
+            color: #999;
+        }
+
+        .actionSuggest .actDet {
+            width: 1100px;
+            height: 403px;
+            margin-left: 35px;
+        }
+
+        .actionSuggest .actDet li {
+            width: 193px;
+            height: 403px;
+            margin-left: 85px;
+            float: left;
+        }
+
+        .actionSuggest .actDet li:first-child {
+            margin-left: 0px;
+        }
+
+        .actDet li span {
+            display: block;
+            margin-top: 22px;
+            width: 193px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            background: #feffff;
+            color: #3388ff;
+            font-size: 14px;
+        }
+
+        .actionSuggest .actDet img {
+            width: 193px;
+            height: 345.5px;
+        }
+
+        .actionSuggest .actBtn {
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            margin: 84px auto;
+            background: #3388ff;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: #ffffff;
+        }
+        /*btdata*/
+        .btData{
+            background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sjbj.png") no-repeat 0 0;
+            background-size: 100% 335px;
+        }
+        .btData .dataDet{
+            width: 1100px;
+            height: 335px;
+            text-align: center;
+            /*margin-left: 205px;*/
+            margin: 0 auto;
+        }
+        .btData #dataList{
+            width: 1100px;
+            display: flex;
+            justify-items: center;
+        }
+        .btData h2 {
+            padding-top: 75px;
+            font-size: 30px;
+            font-weight: normal;
+            color: #fdfdfd;
+        }
+        .btData .dataItem{
+            width: 33%;
+            height: 72.5px;
+            float: left;
+            margin-top: 68px;
+        }
+        .btData .dataItem h3{
+            font-size: 43px;
+            color: #fdfdfd;
+            font-weight: normal;
+        }
+        .btData .dataItem p{
+            font-size: 15.5px;
+            color: #fdfdfd;
+            margin-top: 14px;
+            font-weight: normal;
+        }
+        .user{
+            width: 100%;
+            height: 556px;
+        }
+        .user .userChd{
+            width: 1100px;
+            height: 556px;
+            /*margin-left: 205px;*/
+            margin: 0 auto;
+        }
+        .user .userChd h2{
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: normal;
+            color: #333333;
+            text-align: center;
+        }
+        .user .userChd img{
+            margin-top: 40px;
+            margin-left: 18px;
+            width: 1064px;
+            height: 300px;
+        }
+    </style>
+
+<div class="banner">
+    <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ibanner1.png" alt="">
+</div>
+<div class="product">
+    <div class="proSuggest">
+        <h2>用来推云，快速搭建自己的互动广告平台</h2>
+        <p>为您独家定制个性化高效智能的互动广告平台，帮助中小型传统广告公司开拓新媒体业务，互联网转型等技术难题，实现流量变现，数据可视化，让广告公司和
+            <br/>品牌客户拥有自主的互动广告投放平台</p>
+        <div class="sugDetail">
+            <div class="detLeft">
+                <ul class="delName">
+                    <li>
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dlym.png" alt="">
+                        <span>独立域名、云空间</span>
+                    </li>
+                    <li>
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/logo.png" alt="">
+                        <span>独立LOGO、独立VI</span>
+                    </li>
+                    <li>
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/jffs.png" alt="">
+                        <span>灵活计费方式</span>
+                    </li>
+                    <li>
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sj.png" alt="">
+                        <span>独立数据中心</span>
+                    </li>
+                    <div class="moreBtn">
+                        <a href="">了解更多</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="detRight">
+                <div class="detTab">
+                    <div class="bigImg">
+                    </div>
+                    <div class="sImg1">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/yms.png" alt="">
+                    </div>
+                    <div class="sImg2">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ykjs.png" alt="">
+                    </div>
+                </div>
+                <div class="detTab1">
+                    <div class="bigImg"></div>
+                    <div class="sImg1">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/logos.png" alt="">
+                    </div>
+                    <div class="sImg2">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/vis.png" alt="">
+                    </div>
+                </div>
+                <div class="detTab2">
+                    <div class="bigImg"></div>
+                    <div class="sImg1">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/djs.png" alt="">
+                    </div>
+                    <div class="sImg2">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/fds.png" alt="">
+                    </div>
+                </div>
+                <div class="detTab3">
+                    <div class="bigImg"></div>
+                    <div class="sImg1">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sjs.png" alt="">
+                    </div>
+                    <!--<div class="sImg2">-->
+                    <!--<img src="../images/1云空间.png" alt="">-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="action">
+    <div class="actionSuggest">
+        <h2>来推互动</h2>
+        <p>来推互动是百泰传媒旗下最新的互动式效果广告平台，一方面为品牌方提供最高效的广告投放，另一方面为内容方提供可靠的流量变现平台，致力于成为全球流量
+            <br/>
+            &nbsp;变现先行者。来推互动精准定位目标人群，通过游戏互动等形式深入到用户移动手机使用场景中。目前来推互动月活跃用户3亿，日曝光15亿，新增媒体15000家，
+            <br/>
+            合作客户遍布全国。
+        </p>
+        <div class="actDet">
+            <ul class="actImg">
+                <li>
+                    <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/rkw.png" alt="">
+                    <span>入口位</span>
+                </li>
+                <li><img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/hdyx.png" alt=""> <span>互动游戏</span></li>
+                <li><img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ggtc.png" alt=""> <span>广告弹窗</span></li>
+                <li><img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ggzldy.png" alt=""> <span>广告主落地页</span></li>
+            </ul>
+        </div>
+        <!--<div class="actBtn">-->
+        <a class="actBtn" href="">了解更多</a>
+        <!--</div>-->
+    </div>
+
+</div>
+<div class="btData">
+    <div class="dataDet">
+        <h2>百态数据</h2>
+        <div id="dataList">
+            <div class="dataItem">
+                <h3><span id="data1">200</span>+</h3>
+                <p>定制合作方</p>
+            </div>
+            <div class="dataItem">
+                <h3><span id="data2">3亿</span>+</h3>
+                <p>月活跃用户</p>
+            </div>
+            <div class="dataItem">
+                <h3><span id="data3">15亿</span></h3>
+                <p>日曝光</p>
+            </div>
+            <div class="dataItem">
+                <h3><span id="data4">15000</span>+</h3>
+                <p>日曝光</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="user">
+    <div class="userChd">
+        <h2>他们都在用来推</h2>
+        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/mtyh.png" alt="">
+    </div>
+</div>
+

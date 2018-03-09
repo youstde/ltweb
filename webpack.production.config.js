@@ -55,10 +55,10 @@ module.exports={
         }),
         new htmlWebpackPlugin({
             title: '',
-            template: path.resolve(PAGE_PATH, 'case/html.js'),
-            filename: 'case.html',
+            template: path.resolve(PAGE_PATH, 'laituiInt/html.js'),
+            filename: 'laituiInt.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','case','vendors'],
+            chunks: ['commonjs','laituiInt','vendors'],
             //要把script插入标签里
             inject: 'body'
         }),

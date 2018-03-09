@@ -1,0 +1,212 @@
+.navAll {
+  width: 100%;
+  height: auto; }
+  .navAll .about {
+    width: 1100px;
+    height: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0; }
+    .navAll .about .navUl {
+      width: 100%;
+      height: 38px;
+      margin-top: 22px; }
+      .navAll .about .navUl .navli {
+        width: 59px;
+        height: 38px;
+        float: left;
+        margin-left: 75px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        .navAll .about .navUl .navli a {
+          font-size: 14px;
+          font-weight: normal;
+          color: #333333; }
+      .navAll .about .navUl .navli:first-child {
+        border-bottom: 2px solid red; }
+    .navAll .about .aboutTab {
+      width: 1100px;
+      height: auto; }
+      .navAll .about .aboutTab .aboutUs {
+        width: 1100px;
+        height: auto;
+        background: #ffffff;
+        position: absolute; }
+        .navAll .about .aboutTab .aboutUs .aboutTop {
+          width: 110px;
+          height: 28px;
+          margin-top: 50px;
+          font-size: 20px;
+          color: #333333;
+          font-weight: bold;
+          margin: 50px auto;
+          text-align: center; }
+        .navAll .about .aboutTab .aboutUs h3 {
+          width: 135px;
+          height: 28px;
+          margin: 50px auto 0;
+          font-size: 16px;
+          font-weight: normal;
+          color: #333333;
+          text-align: center; }
+        .navAll .about .aboutTab .aboutUs p {
+          text-align: center;
+          margin-top: 32px;
+          font-size: 16px;
+          font-weight: normal;
+          line-height: 18px;
+          color: #666666;
+          word-spacing: 20px; }
+        .navAll .about .aboutTab .aboutUs .activeImg {
+          margin: 110px 0 59px; }
+        .navAll .about .aboutTab .aboutUs .activeImg, .navAll .about .aboutTab .aboutUs .activeImg img {
+          width: 1100px;
+          height: 300px; }
+      .navAll .about .aboutTab .devHistory {
+        width: 1100px;
+        height: auto;
+        background: #fff;
+        position: absolute;
+        display: none; }
+        .navAll .about .aboutTab .devHistory h2 {
+          width: 110px;
+          height: 28px;
+          margin-top: 50px;
+          font-size: 20px;
+          color: #333333;
+          font-weight: 800;
+          margin: 50px auto;
+          text-align: center; }
+        .navAll .about .aboutTab .devHistory p {
+          text-align: center;
+          margin-top: 32px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+          color: #666666;
+          word-spacing: 20px; }
+        .navAll .about .aboutTab .devHistory .timeTree {
+          width: 1100px;
+          height: auto;
+          position: relative;
+          top: 0;
+          left: 0; }
+          .navAll .about .aboutTab .devHistory .timeTree .treeImg {
+            width: 117px;
+            height: 696px;
+            position: absolute;
+            top: 70px;
+            left: 45%; }
+            .navAll .about .aboutTab .devHistory .timeTree .treeImg img {
+              width: 117px;
+              height: 696px; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeDate {
+            width: 272px;
+            height: auto; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeDate h5 {
+              font-weight: 600;
+              color: #666;
+              font-size: 17px; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeDate p {
+              font-size: 17px;
+              font-weight: 400;
+              color: #2b90ed;
+              margin-top: 12px;
+              text-align: left; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeOne {
+            position: absolute;
+            top: 246px;
+            left: 24%;
+            text-align: right; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeOne h5 {
+              margin-right: 55px; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeTwo {
+            position: absolute;
+            top: 380px;
+            left: 24%;
+            text-align: right; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeTwo h5 {
+              margin-right: 55px; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeThree {
+            position: absolute;
+            top: 514px;
+            left: 24%;
+            text-align: right; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeThree h5 {
+              margin-right: 55px; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeFour {
+            position: absolute;
+            top: 652px;
+            left: 24%;
+            text-align: right; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeFour h5 {
+              margin-right: 55px; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeFive {
+            position: absolute;
+            top: 176px;
+            right: 17%; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeSix {
+            position: absolute;
+            top: 310px;
+            right: 17%; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeSeven {
+            position: absolute;
+            top: 448px;
+            right: 17%; }
+          .navAll .about .aboutTab .devHistory .timeTree .timeEgiht {
+            position: absolute;
+            top: 588px;
+            right: 17%; }
+      .navAll .about .aboutTab .contact {
+        width: 1100px;
+        height: auto;
+        background: #fff;
+        position: absolute;
+        display: none; }
+        .navAll .about .aboutTab .contact h2 {
+          width: 110px;
+          height: 28px;
+          margin-top: 50px;
+          font-size: 20px;
+          color: #333333;
+          font-weight: 800;
+          margin: 50px auto;
+          text-align: center; }
+        .navAll .about .aboutTab .contact .contactPeo {
+          width: 1100px;
+          height: auto; }
+          .navAll .about .aboutTab .contact .contactPeo .peo {
+            width: 25%;
+            height: 216px;
+            float: left;
+            position: relative;
+            margin-left: 81px; }
+            .navAll .about .aboutTab .contact .contactPeo .peo h3 {
+              position: absolute;
+              font-size: 20px;
+              font-weight: normal;
+              color: #fff;
+              top: 28%;
+              left: 22%; }
+            .navAll .about .aboutTab .contact .contactPeo .peo img {
+              width: 213px;
+              height: 145px; }
+            .navAll .about .aboutTab .contact .contactPeo .peo p {
+              line-height: 20px;
+              font-size: 16px;
+              color: #666666;
+              margin-top: 35px; }
+        .navAll .about .aboutTab .contact .companyAdd {
+          margin: 0 auto;
+          width: 1100px;
+          height: 340px;
+          padding-top: 90px;
+          clear: both; }
+          .navAll .about .aboutTab .contact .companyAdd #companyAdd {
+            width: 822px;
+            height: 340px;
+            margin: 0 auto; }
+
+/*# sourceMappingURL=index.css.map */

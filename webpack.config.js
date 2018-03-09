@@ -9,7 +9,7 @@ var path = require('path'),
 module.exports={
     entry: {
         'index': './src/page/index/index.js',
-        'case': './src/page/case/index.js',
+        'laituiInt': './src/page/laituiInt/index.js',
         'about': './src/page/about/index.js',
         'dynamic': './src/page/dynamic/index.js',
         'interaction': './src/page/interaction/index.js',
@@ -32,7 +32,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'index/html.js'),
             filename: 'index.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','index','vendors'],
+            chunks: ['commonjs','laituiInt','index','vendors'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -47,10 +47,10 @@ module.exports={
         }),
         new htmlWebpackPlugin({
             title: '',
-            template: path.resolve(PAGE_PATH, 'case/html.js'),
-            filename: 'case.html',
+            template: path.resolve(PAGE_PATH, 'laituiInt/html.js'),
+            filename: 'laituiInt.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','case','vendors'],
+            chunks: ['commonjs','laituiInt','vendors'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -109,6 +109,16 @@ module.exports={
                 test: /\.ejs$/,
                 loader: 'ejs-loader?variable=data',
                 include: APP_PATH
+            },
+            {
+                test: /\.scss$/,
+                loader:'style!css!sass'
+            },
+            {
+                // 图片加载器，雷同file-loader，更适合图片，可以将较小的图片转成base64，减少http请求
+                // 如下配置，将小于8192byte的图片转成base64码
+                test: /\.(png|jpg|gif)$/,
+                loader: 'url-loader?limit=8192&name=../images/[name].[ext]?[hash]',
             }
         ]
     }
