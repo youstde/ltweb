@@ -1,9 +1,11 @@
 .navAll {
   width: 100%;
-  height: auto; }
+  height: auto;
+  overflow: hidden; }
   .navAll .about {
     width: 1100px;
     height: 1200px;
+    overflow: hidden;
     margin: 0 auto;
     position: relative;
     top: 0;
