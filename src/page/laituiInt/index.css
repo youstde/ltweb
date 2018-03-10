@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navImg {
   width: 100%;
   height: 200px; }
@@ -64,7 +65,6 @@
     .appSceneAll .appScene .sceneLeft {
       width: 55%;
       height: 796px;
-      background: #b6b6b6;
       float: left; }
       .appSceneAll .appScene .sceneLeft .leftListTop {
         width: 100%;
@@ -87,7 +87,9 @@
             flex-wrap: wrap; }
             .appSceneAll .appScene .sceneLeft .leftListTop .listTopUl .topUlList img, .appSceneAll .appScene .sceneLeft .leftListTop .listTopUl .bottomUlList img {
               width: 146px;
-              height: 146px; }
+              height: 146px;
+              opacity: 0.6;
+              　filter: alpha(opacity=60); }
             .appSceneAll .appScene .sceneLeft .leftListTop .listTopUl .topUlList h5, .appSceneAll .appScene .sceneLeft .leftListTop .listTopUl .bottomUlList h5 {
               font-size: 20px;
               color: #333;
@@ -119,7 +121,6 @@
     .appSceneAll .appScene .sceneRight {
       width: 45%;
       height: 796px;
-      background: #e7e7e7;
       float: left; }
       .appSceneAll .appScene .sceneRight .phone {
         width: 460px;
@@ -154,7 +155,6 @@
           position: absolute;
           left: 183px;
           bottom: 10px;
-          background: #b6b6b6;
           text-align: center; }
           .appSceneAll .appScene .sceneRight .phone .phoneBtn .btnLeft, .appSceneAll .appScene .sceneRight .phone .phoneBtn .btnRight {
             display: inline-block;
@@ -162,14 +162,18 @@
             height: 15px;
             border-radius: 14px;
             background: #1599ff;
-            margin-top: 5px; }
+            margin-top: 5px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #79c5ff; }
           .appSceneAll .appScene .sceneRight .phone .phoneBtn .btnRight {
-            background: #fff; }
+            background: #f3f8fe; }
 
 .classExmAll {
   width: 100%;
   height: 910px;
-  background: bisque; }
+  background: #fff; }
   .classExmAll .classExm {
     width: 1120px;
     height: 910px;
@@ -188,7 +192,13 @@
         float: left;
         width: 265px;
         height: 559px;
-        text-align: center; }
+        text-align: center;
+        -webkit-border-radius: 37px;
+        -moz-border-radius: 37px;
+        border-radius: 37px;
+        -webkit-box-shadow: 1px 1px 52px #e4f0fb;
+        -moz-box-shadow: 1px 1px 52px #e4f0fb;
+        box-shadow: 1px 1px 52px #e4f0fb; }
         .classExmAll .classExm .exmDet .exmDetL img, .classExmAll .classExm .exmDet .exmDetC img {
           width: 265px;
           height: 559px; }
@@ -204,7 +214,7 @@
         margin-left: 153px;
         width: 265px;
         height: 559px;
-        background: #b6b6b6; }
+        background: #fff; }
         .classExmAll .classExm .exmDet .exmDetR h3 {
           margin-top: 70px;
           font-size: 32px;
@@ -258,13 +268,15 @@
       font-size: 29.5px;
       font-weight: normal;
       color: #333333;
-      margin: 86px auto 83px; }
+      margin: 0 auto 83px;
+      padding-top: 86px; }
     .medieAdvantageALl .medieAdvantage .AdvantageImgsecond, .medieAdvantageALl .medieAdvantage .AdvantageImgfouth {
-      margin-left: 44px; }
+      padding-left: 44px; }
     .medieAdvantageALl .medieAdvantage .AdvantageTop {
       width: 46%;
       height: 138px;
       float: left;
+      padding-left: 37px;
       border-right: 1px dashed #efefef;
       border-bottom: 1px dashed #efefef; }
       .medieAdvantageALl .medieAdvantage .AdvantageTop .AdvantageImg {
@@ -288,12 +300,14 @@
           margin-top: 20px;
           font-size: 14px;
           color: #666; }
+    .medieAdvantageALl .medieAdvantage .AdvantageImgsecond {
+      border-right: none; }
     .medieAdvantageALl .medieAdvantage .AdvantageImgthird, .medieAdvantageALl .medieAdvantage .AdvantageImgfouth {
       border-bottom: none; }
       .medieAdvantageALl .medieAdvantage .AdvantageImgthird .AdvantageImg, .medieAdvantageALl .medieAdvantage .AdvantageImgthird .Advantagetitle, .medieAdvantageALl .medieAdvantage .AdvantageImgfouth .AdvantageImg, .medieAdvantageALl .medieAdvantage .AdvantageImgfouth .Advantagetitle {
         margin-top: 53px; }
     .medieAdvantageALl .medieAdvantage .AdvantageImgfouth {
-      margin-lef: 44px; }
+      border-right: none; }
 
 .partenMediaAll {
   width: 100%;
@@ -314,6 +328,9 @@
   width: 100%;
   height: 285px;
   padding-top: 120px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sqrz.png") 0 0 no-repeat;
   background-size: 100% 285px;
   margin: 0 auto; }

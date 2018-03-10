@@ -73,7 +73,7 @@
     .sceneLeft{
       width: 55%;
       height: 796px;
-      background: #b6b6b6;
+      //background: #b6b6b6;
       float: left;
       .leftListTop{
         width: 100%;
@@ -97,6 +97,8 @@
             img{
               width: 146px;
               height: 146px;
+              opacity:0.6;
+            　filter:alpha(opacity=60);
               //margin-top: 149px;
             }
             h5{
@@ -141,7 +143,7 @@
     .sceneRight{
       width: 45%;
       height: 796px;
-      background: #e7e7e7;
+      //background: #e7e7e7;
       float: left;
       .phone{
         width: 460px;
@@ -181,7 +183,7 @@
           position: absolute;
           left: 183px;
           bottom: 10px;
-          background: #b6b6b6;
+          //background: #b6b6b6;
           text-align: center;
           .btnLeft,.btnRight{
             display: inline-block;
@@ -190,9 +192,13 @@
             border-radius: 14px;
             background: #1599ff;
             margin-top: 5px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border:1px solid #79c5ff;
           }
           .btnRight {
-            background: #fff;
+            background: #f3f8fe;
           }
         }
       }
@@ -202,7 +208,7 @@
 .classExmAll{
   width:100%;
   height:910px;
-  background: bisque;
+  background: #fff;
   .classExm{
     width: 1120px;
     height: 910px;
@@ -224,6 +230,12 @@
         width: 265px;
         height: 559px;
         text-align: center;
+        -webkit-border-radius: 37px;
+        -moz-border-radius: 37px;
+        border-radius: 37px;
+        -webkit-box-shadow: 1px 1px 52px #e4f0fb;
+        -moz-box-shadow: 1px 1px 52px #e4f0fb;
+        box-shadow: 1px 1px 52px #e4f0fb;
         img{
           width: 265px;
           height: 559px;
@@ -243,7 +255,7 @@
         margin-left: 153px;
         width: 265px;
         height: 559px;
-        background: #b6b6b6;
+        background: #fff;
         h3{
           margin-top: 70px;
           font-size: 32px;
@@ -312,15 +324,18 @@
       font-size: 29.5px;
       font-weight: normal;
       color: #333333;
-      margin: 86px auto 83px;
+      //margin: 86px auto 83px;
+      margin: 0 auto 83px;
+      padding-top: 86px;
     }
     .AdvantageImgsecond, .AdvantageImgfouth{
-      margin-left: 44px;
+      padding-left: 44px;
     }
     .AdvantageTop{
       width: 46%;
       height: 138px;
       float: left;
+      padding-left: 37px;
       border-right: 1px dashed #efefef;
       border-bottom: 1px dashed #efefef;
       .AdvantageImg{
@@ -351,15 +366,19 @@
         }
       }
     }
+    .AdvantageImgsecond{
+      border-right: none;
+    }
     .AdvantageImgthird,.AdvantageImgfouth{
       border-bottom: none;
+      //border-right: none;
       //margin-top: 53px;
       .AdvantageImg,.Advantagetitle{
         margin-top: 53px;
       }
     }
     .AdvantageImgfouth{
-      margin-lef: 44px;
+      border-right: none;
     }
   }
 }
@@ -384,6 +403,9 @@
   width: 100%;
   height: 285px;
   padding-top: 120px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sqrz.png") 0 0 no-repeat;
   background-size: 100% 285px;
   margin: 0 auto;
