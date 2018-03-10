@@ -28,7 +28,7 @@ a{
 }
 .head-left{
   float: left;
-  width: 422px;
+  width: 405px;
   height: 70px;
   line-height: 70px;
   margin-left: 205px;
@@ -70,13 +70,38 @@ a{
   display: inline-block;
 }
 .head-center .centerUl li{
+  width: 60px;
   float: left;
-  display: inline-block;
-}
-.head-center .centerUl li{
   height: 70px;
   line-height: 70px;
   margin-left: 33px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  /*border-bottom: 2px solid red;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#actLine{
+  width: 0px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #e83928;
+  margin: 0 auto;
+  position: absolute;
+  top: 66px;
+  left: 0px;
+  right: 0px;
+  transition: width 1s linear;
+  -webkit-transition: width 0.5s linear;
+  -moz-transition: width 0.5s linear;
+  -ms-transition: width 0.5s linear;
+  -o-transition: width 0.5s linear;
+  transition: width 0.5s linear;
+}
+.centerLi:hover #actLine{
+  width:60px;
 }
 .head-center li a{
   font-family: "PingFang SC";
@@ -141,6 +166,7 @@ footer section{
   width: 1120px;
   height: 310px;
   margin-left: 205px;
+  border-bottom: 1px solid #5a5f64;
 }
 section .foot-left{
   width: 606px;
@@ -187,6 +213,6 @@ footer .declare p{
   font-family: "PingFang SC";
   font-size: 14px;
   color: #dcdcdd;
-  /*margin-left: 267px;*/
+  margin-top: 20px;
   text-align:center
 }

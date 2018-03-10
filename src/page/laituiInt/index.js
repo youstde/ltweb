@@ -1,14 +1,14 @@
 require('../../component/layout/reset.css');
 require ('./index.css');
 require('../../component/layout/common');
-var $ = function (dom) {
+var $Dom = function (dom) {
     return document.querySelectorAll(dom);
 }
 
-console.log($('.listTopUl .topUlList'));
-var familyLi = $('.listTopUl .topUlList');
-var oPhone = $('.phone')[0];
-var oContent = $('.phoneContent');
+console.log($Dom('.listTopUl .topUlList'));
+var familyLi = $Dom('.listTopUl .topUlList');
+var oPhone = $Dom('.phone')[0];
+var oContent = $Dom('.phoneContent');
 for(let i = 0; i <= familyLi.length - 1 ;i ++){
     oContent[i].style.display = "none";
     oContent[0].style.display = "block";
