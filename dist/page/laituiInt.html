@@ -1,3 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>百泰传媒-移动精准大数据互动广告营销</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="百泰传媒，来推，百泰广告,效果广告，精准大数据，流量变现，移动，广告联盟，推广平台">
+    <meta name="description" content="百泰传媒是一家移动流量变现服务商，研发了全新的移动商业广告模式，建立全链路、精准、高效、可衡量的移动端营销体系，广告主可获得更好的投放效果，媒体方能得到更好的流量实现转化。">
+    <link rel="icon" href="//static.adbaitai.com/Website/Img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="//static.adbaitai.com/Website/Js/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+<link href="./style.css" rel="stylesheet"></head>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qWFURt9XtF3ZAGCAnVVTGbHuIrGkx9W6"></script>
+<body>
+<header class="headAll">
+    <div class="head">
+
+
+    <div class="head-left">
+        <div class="leftChild">
+            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/btlogo.png" alt="logo">
+            <span></span>
+            <b>百泰传媒</b>
+        </div>
+    </div>
+    <div class="head-center">
+        <ul class="centerUl">
+            <li class="centerLi">
+                <a href="./index.html">首页</a>
+                <div id="actLine"></div>
+            </li>
+            <li class="centerLi">
+                <a href="./laituiInt.html">来推互动</a>
+                <div id="actLine"></div>
+            </li>
+            <li class="centerLi">
+                <a href="//ltyun.adbaitai.com">来推云</a>
+                <div id="actLine"></div>
+            </li>
+            <li class="centerLi">
+                <a href="./completeCase.html">成功案例</a>
+                <div id="actLine"></div>
+            </li>
+            <li class="centerLi">
+                <a href="./dynamic.html">公司动态</a>
+                <div id="actLine"></div>
+            </li>
+            <li class="centerLi">
+                <a href="./about.html">关于我们</a>
+                <div id="actLine"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="head-right">
+        <div class="login">
+            <a href="//laitui.adbaitai.com/login">登录</a>
+        </div>
+        <div class="register">
+            <a href="javascript:void(0);">注册</a>
+        </div>
+    </div>
+    <div id="register">
+        <h2>欢迎注册</h2>
+        <p>请填写一下信息，以便我们能更好的了解您的需求和帮助您</p>
+        <form action="">
+            <div class="regList">
+                <label for="userName">姓名</label>
+                <input type="text" id="userName" placeholder="请输入姓名">
+            </div>
+            <div class="regList">
+                <label for="userPhone">手机号码</label>
+                <input type="text" id="userPhone" placeholder="请输入手机号码">
+            </div>
+            <div class="regList">
+                <label for="qqEmail">QQ邮箱</label>
+                <input type="text" id="qqEmail" placeholder="请输入邮箱地址">
+            </div>
+            <div class="regList">
+                <label for="userCom">公司</label>
+                <input type="text" id="userCom" placeholder="请输入公司名称">
+            </div>
+            <div class="regList">
+                <label for="userAdd">所属区域</label>
+                <input type="text" id="userAdd" placeholder="请选择">
+            </div>
+            <div class="regList">
+                <label for="userUrl">公司网址</label>
+                <input type="text" id="userUrl" placeholder="请输入公司网址">
+            </div>
+            <div class="regList lastRegList">
+                <label for="userReq">您的需求</label>
+                <textarea name="" id="userReq" cols="30" rows="10"></textarea>
+                <!--<input type="textarea" id="userReq" placeholder="请输入您的需求">-->
+            </div>
+
+
+
+
+            <button>注册</button>
+            <span>已有账号？<a href="//laitui.adbaitai.com/login">立即登录</a></span>
+            <i id="closeReg">X</i>
+
+        </form>
+    </div>
+
+    <!-- 在线申请弹窗 -->
+    <div class="applyFormBgBox" style = 'display:none'>
+        <div class="applyFormBox">
+            <div class="closeFormBoxBtn"></div>
+            <div class="welcomeApply">欢迎注册</div>
+            <div class ='formTopTip'>请填写以下信息，以便我们能更好的了解您的需求和帮助您</div>
+            <div class="lineOneBox">
+                <div class="lineOneLeft">
+                    <p>姓名</p>
+                    <input type="text" id ='userName' placeholder="请输入姓名">
+                </div>
+                <div class="lineOneRight">
+                    <p>QQ邮箱</p>
+                    <input type="text" id ='qqEmail' placeholder="请输入邮箱网址">
+                </div>
+            </div>
+            <div class="lineOneBox">
+                <div class="lineOneLeft">
+                    <p>手机号码</p>
+                    <input type="text" id ='userIphone' placeholder="请输入手机号码">
+                </div>
+                <div class="lineOneRight">
+                    <p>公司</p>
+                    <input type="text" id ='userCompany' placeholder="请输入公司名称">
+                </div>
+            </div>
+            <div class="lineOneBox">
+                <div class="lineOneLeft" style="position: relative">
+                    <p>所属区域</p>
+                    <input type="text" id ='select' readonly placeholder="请选择" style="background: url(http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiyun/arrowDown.png) no-repeat;
+                       background-size: 40px; background-position: center right">
+                    <ul class="areaList" style="display:none">
+                        <li>北京市</li>
+                        <li>天津市</li>
+                        <li>上海市</li>
+                        <li>重庆市</li>
+                        <li>河北省</li>
+                        <li>河南省</li>
+                        <li>云南省</li>
+                        <li>辽宁省</li>
+                        <li>湖南省</li>
+                        <li>安徽省</li>
+                        <li>山东省</li>
+                        <li>江苏省</li>
+                        <li>浙江省</li>
+                        <li>江西省</li>
+                        <li>湖北省</li>
+                        <li>甘肃省</li>
+                        <li>山西省</li>
+                        <li>内蒙古</li>
+                        <li>陕西省</li>
+                        <li>吉林省</li>
+                        <li>福建省</li>
+                        <li>贵州省</li>
+                        <li>广东省</li>
+                        <li>青海省</li>
+                        <li>四川省</li>
+                        <li>海南省</li>
+                        <li>台湾省</li>
+                        <li>西藏</li>
+                        <li>黑龙江省</li>
+                        <li>广西壮族</li>
+                        <li>宁夏回族</li>
+                        <li>新疆维吾尔</li>
+                        <li>香港特别行政区</li>
+                        <li>澳门特别行政区</li>
+                    </ul>
+                </div>
+                <div class="lineOneRight">
+                    <p>公司网址</p>
+                    <input type="text" id = 'userCompany' placeholder="请输入公司网址">
+                </div>
+            </div>
+            <div class="lineOneBox">
+                <p>您的需求</p>
+                <textarea id = 'usertextArea' name="name" rows="8" cols="80" maxlength="100"
+                          placeholder="请填写您的需求"></textarea>
+            </div>
+            <div id='applyFormSubmitBtn'>注册</div>
+            <div class="toLogin">已有账号？<a href="//laitui.adbaitai.com/login" style="color: #1674f7">立即登录</a></div>
+        </div>
+    </div>
+
+    </div>
+</header>
 <style>
     @charset "UTF-8";
     .navImg {
@@ -595,3 +786,32 @@
             <a href="javascript:;">申请入驻</a>
         </div>
     </div>
+
+<footer>
+    <section>
+        <ul class="foot-left">
+            <h3>联系我们</h3>
+            <h4>电话： 400-826-0750（工作日 9:00-18:00）</h4>
+            <h4>邮箱： baitai@adbaitai.com</h4>
+            <h4>地址： 杭州市天目山路217号江南电子大厦10楼</h4>
+            <h4 class = "foot-address">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;北京市朝阳区西大望甲路12号国家广告产业园B座602室</h4>
+
+        </ul>
+        <ul class="foot-center">
+            <h3>关于我们</h3>
+            <h4><a href="./about.html">公司介绍</a></h4>
+            <h4><a href="./about.html">发展历程</a></h4>
+            <h4><a href="./about.html">联系我们</a></h4>
+            <h4><a href="./dynamic.html">公司动态</a></h4>
+        </ul>
+        <ul class="foot-right">
+            <h3>关注我们</h3>
+            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/wechat.png" alt="">
+        </ul>
+    </section>
+    <div class="declare">
+        <p>Copyright © 2018  adbaitai.com  版权所有  浙ICP备16030779号-2</p>
+    </div>
+</footer>
+<script type="text/javascript" src="./common.js"></script><script type="text/javascript" src="./laituiInt.js"></script></body>
+</html>

@@ -1,5 +1,4 @@
 require('../../component/layout/reset.css');
-require ('./index.css');
 require('../../component/layout/common');
 (function () {
     var oNavUL = document.querySelectorAll('.navUl .navli');

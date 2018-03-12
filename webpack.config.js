@@ -4,7 +4,8 @@ var path = require('path'),
     APP_PATH = path.resolve(ROOT_PATH,'src'),
     BUILD_PATH = path.resolve(ROOT_PATH, './dist'),
     PAGE_PATH = path.resolve(APP_PATH, 'page'),
-    htmlWebpackPlugin = require('html-webpack-plugin');
+    htmlWebpackPlugin = require('html-webpack-plugin'),
+    ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports={
     entry: {
@@ -13,8 +14,6 @@ module.exports={
         'about': './src/page/about/index.js',
         'dynamic': './src/page/dynamic/index.js',
         'completeCase': './src/page/completeCase/index.js',
-        'interaction': './src/page/interaction/index.js',
-        'vendors':['zepto']
     },
     output: {
         path: BUILD_PATH,
@@ -33,7 +32,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'index/html.js'),
             filename: 'index.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','laituiInt','completeCase','index','vendors'],
+            chunks: ['commonjs','index'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -42,7 +41,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'about/html.js'),
             filename: 'about.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','about','vendors'],
+            chunks: ['commonjs','about'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -51,7 +50,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'articleList/list_1.html'),
             filename: 'list_1.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','list_1.html','vendors'],
+            chunks: ['commonjs','list_1.html'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -60,7 +59,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'articleList/list_2.html'),
             filename: 'list_2.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','list_2.html','vendors'],
+            chunks: ['commonjs','list_2.html'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -69,7 +68,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'articleList/list_3.html'),
             filename: 'list_3.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','list_3.html','vendors'],
+            chunks: ['commonjs','list_3.html'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -78,7 +77,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'articleList/list_4.html'),
             filename: 'list_4.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','list_4.html','vendors'],
+            chunks: ['commonjs','list_4.html'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -87,7 +86,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'articleList/list_5.html'),
             filename: 'list_5.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','list_5.html','vendors'],
+            chunks: ['commonjs','list_5.html'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -96,7 +95,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'articleList/list_6.html'),
             filename: 'list_6.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','list_6.html','vendors'],
+            chunks: ['commonjs','list_6.html'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -105,7 +104,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'articleList/list_7.html'),
             filename: 'list_7.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','list_7.html','vendors'],
+            chunks: ['commonjs','list_7.html'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -114,7 +113,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'articleList/list_8.html'),
             filename: 'list_8.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','list_8.html','vendors'],
+            chunks: ['commonjs','list_8.html'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -123,7 +122,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'laituiInt/html.js'),
             filename: 'laituiInt.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','laituiInt','vendors'],
+            chunks: ['commonjs','laituiInt'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -132,7 +131,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'completeCase/html.js'),
             filename: 'completeCase.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','completeCase','vendors'],
+            chunks: ['commonjs','completeCase'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -141,19 +140,11 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'dynamic/html.js'),
             filename: 'dynamic.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','dynamic','vendors'],
+            chunks: ['commonjs','dynamic'],
             //要把script插入标签里
             inject: 'body'
         }),
-        new htmlWebpackPlugin({
-            title: '',
-            template: path.resolve(PAGE_PATH, 'interaction/html.js'),
-            filename: 'interaction.html',
-            //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','interaction','vendors'],
-            //要把script插入标签里
-            inject: 'body'
-        })
+        new ExtractTextPlugin("styles.css")
     ],
     devServer: {
         proxy: {
@@ -171,14 +162,20 @@ module.exports={
         loaders:[
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader',
-                //注意loaders的处理顺序是从右到左的，这里就是先运行css-loader然后是style-loade
-                include: APP_PATH
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use:[
+                        {
+                            loader:'css-loader',
+                            options:{
+                                minimize: true //css压缩
+                            }
+                        }
+
+                    ]
+                })
             },
-            {
-                test: /\.(png|jpg)$/,
-                loader: 'url?limit=5000'
-            },
+
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
@@ -191,10 +188,6 @@ module.exports={
                 test: /\.ejs$/,
                 loader: 'ejs-loader?variable=data',
                 include: APP_PATH
-            },
-            {
-                test: /\.scss$/,
-                loader:'style!css!sass'
             },
             {
                 // 图片加载器，雷同file-loader，更适合图片，可以将较小的图片转成base64，减少http请求

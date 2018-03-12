@@ -1,5 +1,5 @@
 require('../../component/layout/reset.css');
-require ('./index.css');
+// require ('./index.css');
 require('../../component/layout/common');
 var $Dom = function (dom) {
     return document.querySelectorAll(dom);
