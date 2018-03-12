@@ -9,12 +9,12 @@ var familyLi = $Dom('.listTopUl .topUlList');
 var oPhone = $Dom('.phone')[0];
 var oContent = $Dom('.phoneContent');
 var isLeft = false;
-$('.navImg').click(function () {
-    $('#register').css("display","block");
-    $('#closeReg').click(function () {
-        $('#register').css('display','none');
-    })
-})
+// $('.navImg').click(function () {
+//     $('#register').css("display","block");
+//     $('#closeReg').click(function () {
+//         $('#register').css('display','none');
+//     })
+// })
 /*
  *
  * topUlList 透明度变化
@@ -74,4 +74,8 @@ for(let i = 0; i <= familyLi.length - 1 ;i ++){
 $('.requireAdd').click(function () {
     $('body').css('overflow','hidden');
     $('.applyFormBgBox').css('display', 'block');
-})
+});
+$('.navImg').click(function () {
+    $('body').css('overflow','hidden');
+    $('.applyFormBgBox').css('display', 'block');
+});

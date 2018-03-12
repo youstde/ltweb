@@ -1,10 +1,37 @@
 <style>
+    /*.completeBanner{*/
+        /*width: 100%;*/
+        /*height: 255px;*/
+        /*!*height: auto;*!*/
+        /*background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/bannerCom.png") center no-repeat;*/
+        /*background-size:100% 100% ;*/
+    /*}*/
     .completeBanner{
         width: 100%;
-        height: 255px;
-        /*height: auto;*/
+        height: 191px;
+        position: relative;
         background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/bannerCom.png") center no-repeat;
-        background-size:100% 100% ;
+        background-size: 100%;
+    }
+    .banner_report{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        width: 400px;
+        height: 78px;
+        margin-left: -200px;
+        margin-top: -39px;
+        text-align: center;
+    }
+    .banner_report>li{
+        color: #ffffff;
+        font-size: 34px;
+        font-family: "PingFang SC";
+    }
+    .banner_report>p{
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 100;
     }
 
     .tabChoose{
@@ -143,7 +170,13 @@
         background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/register.png") center no-repeat;
     }
 </style>
-<div class="completeBanner"></div>
+<!--<div class="completeBanner"></div>-->
+<div class="completeBanner">
+    <ul class="banner_report">
+        <li>成功案例</li>
+        <p>为千万用户提供优质的广告平台</p>
+    </ul>
+</div>
 <div class="tabChoose">
     <ul class="tabchoose_main ">
         <li class="choose chooseListNum"><span class="Online"></span>

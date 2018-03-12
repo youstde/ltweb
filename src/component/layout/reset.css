@@ -85,6 +85,11 @@ a{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.head-center .centerUl a{
+  display: inline-block;
+  width: 60px;
+  height: 70px;
+}
 #actLine{
   width: 0px;
   height: 4px;
@@ -309,6 +314,9 @@ section .foot-center{
   width: auto;
   float: left;
   margin-top: 75px;
+}
+section .foot-center h4{
+  margin-top: 17px;
 }
 section .foot-right{
   float: right;
