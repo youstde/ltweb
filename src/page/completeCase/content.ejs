@@ -1,0 +1,203 @@
+<style>
+    .completeBanner{
+        width: 100%;
+        height: 255px;
+        height: auto;
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/bannerCom.png") center no-repeat;
+        background-size:100% 100% ;
+    }
+
+    .tabChoose{
+        width: 100%;
+        height: 119px;
+        background:#ffffff;
+    }
+    .tabchoose_main{
+        width: 900px;
+        height: 119px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .tabchoose_main>li{
+        float: left;
+        width: 300px;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .tabchoose_main>li>span{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 71px;
+        margin-top: 40px;
+        margin-bottom: 29px;
+        margin-right: 12px;
+
+    }
+    .tabchoose_main>li.choose>p{
+        color: #2b90ed;
+    }
+    .tabchoose_main>li>p{
+        float: left;
+        margin-top: 50px;
+        font-size: 24px;
+    }
+    .choose{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/choose.png") bottom center no-repeat;
+        background-size: 100%;
+    }
+    .Online{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/Online.png") center no-repeat;
+        background-size: 100%;
+    }
+    .choose .Online{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/checkedOnline.png") center no-repeat;
+        background-size: 100%;
+    }
+    .Finance{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/Finance.png") center no-repeat;
+        background-size: 100%;
+    }
+    .choose .Finance{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/checkedFinance.png") center no-repeat;
+        background-size: 100%;
+    }
+    .education{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/education.png") center no-repeat;
+        background-size: 100%;
+    }
+    .choose .education{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/cheackededucation.png") center no-repeat;
+        background-size: 100%;
+    }
+    .tab_main{
+        width: 100%;
+        background: #f6f8fa;
+    }
+    .tab_main_content{
+        width: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .online_ad,.finance_ad,.education_ad{
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    .tab_main_content_left{
+        width: 500px;
+        height: 734px;
+        float: left;
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/iphone.png") center no-repeat;
+        background-size: 100%;
+    }
+    .tab_main_content_left img{
+        width: 508px;
+        margin-top: 132px;
+    }
+    .tab_main_content_right{
+        float: left;
+        width: 350px;
+        padding-left: 50px;
+    }
+    .case{
+        padding-top: 166px;
+        color: #333333;
+        font-size: 31px;
+    }
+    .case_text{
+        padding-top: 27px;
+        color: #999999;
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .case_effect{
+        margin: 39px 0 23px;
+        color: #666666;
+        font-size: 24px;
+    }
+    .tab_main_content_right li{
+        color: #999999;
+        font-size: 20px;
+        line-height: 52px;
+    }
+    .tab_main_content_right li span{
+        display: inline-block;
+        margin-right: 12px;
+        width: 45px;
+        height: 45px;
+        vertical-align: middle;
+        background-size: 100%;
+    }
+    .click{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/click.png") center no-repeat;
+    }
+    .price{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/price.png") center no-repeat;
+    }
+    .roi{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/roi.png") center no-repeat;
+    }
+    .register{
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/register.png") center no-repeat;
+    }
+</style>
+<div class="completeBanner"></div>
+<div class="tabChoose">
+    <ul class="tabchoose_main ">
+        <li class="choose chooseListNum"><span class="Online"></span>
+            <p>电商行业</p></li>
+        <li class="chooseListNum"><span class="Finance"></span>
+            <p>金融行业</p></li>
+        <li class="chooseListNum"><span class="education"></span>
+            <p>教育行业</p></li>
+    </ul>
+</div>
+<div class="tab_main">
+    <div class="tab_main_content">
+        <div class="online_ad" style="display: block">
+            <div class="tab_main_content_left">
+                <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/online_ad.png" class="animated fadeInLeft">
+            </div>
+            <div class="tab_main_content_right animated fadeInUp">
+                <p class="case">案例：电商行业</p>
+                <div class="case_text">每日优鲜：致力于重构供应链，连接优质生鲜生产者与和消费者，为用户提供极致的生鲜电商体验服务。</div>
+                <div style="width:200px;height:1px;margin:34px 0 0 0;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+                <p class="case_effect">推广效果：</p>
+                <li><span class="click"></span>点击率：40.63%</li>
+                <li><span class="price"></span>点击单价：0.35元</li>
+                <li><span class="roi"></span>ROI：1：5.2</li>
+            </div>
+        </div>
+        <div class="finance_ad" style="display: none">
+            <div class="tab_main_content_left">
+                <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/Finance_ad.png" class="animated fadeInLeft">
+            </div>
+            <div class="tab_main_content_right animated fadeInUp">
+                <p class="case">案例：金融行业</p>
+                <div class="case_text">环球黑卡：全球特权俱乐部的创始品牌，累计投资超过2亿元；以精致生活为追求，整合与发行全球特权，让少数人优先享用世界。</div>
+                <div style="width:200px;height:1px;margin:34px 0 0 0;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+                <p class="case_effect">推广效果：</p>
+                <li><span class="click"></span>点击率：37.69%</li>
+                <li><span class="price"></span>点击单价：0.51元</li>
+                <li><span class="register"></span>注册成本：16元</li>
+            </div>
+        </div>
+        <div class="education_ad" style="display: none">
+            <div class="tab_main_content_left">
+                <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/education_ad.png" class="animated fadeInLeft">
+            </div>
+            <div class="tab_main_content_right animated fadeInUp">
+                <p class="case">案例：教育行业</p>
+                <div class="case_text">英孚教育：旨在帮助学员掌握语言技能、建立生活的自信，亦是多家跨国企业员工培训的信心之选。</div>
+                <div style="width:200px;height:1px;margin:34px 0 0 0;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+                <p class="case_effect">推广效果：</p>
+                <li><span class="click"></span>点击率：35.75%</li>
+                <li><span class="price"></span>点击单价：0.36元</li>
+                <li><span class="register"></span>注册成本：25元</li>
+            </div>
+        </div>
+    </div>
+</div>
+

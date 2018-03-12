@@ -12,6 +12,7 @@ module.exports={
         'laituiInt': './src/page/laituiInt/index.js',
         'about': './src/page/about/index.js',
         'dynamic': './src/page/dynamic/index.js',
+        'completeCase': './src/page/completeCase/index.js',
         'interaction': './src/page/interaction/index.js',
         'vendors':['zepto']
     },
@@ -32,7 +33,7 @@ module.exports={
             template: path.resolve(PAGE_PATH, 'index/html.js'),
             filename: 'index.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','laituiInt','index','vendors'],
+            chunks: ['commonjs','laituiInt','completeCase','index','vendors'],
             //要把script插入标签里
             inject: 'body'
         }),
@@ -47,10 +48,91 @@ module.exports={
         }),
         new htmlWebpackPlugin({
             title: '',
+            template: path.resolve(PAGE_PATH, 'articleList/list_1.html'),
+            filename: 'list_1.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','list_1.html','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'articleList/list_2.html'),
+            filename: 'list_2.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','list_2.html','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'articleList/list_3.html'),
+            filename: 'list_3.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','list_3.html','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'articleList/list_4.html'),
+            filename: 'list_4.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','list_4.html','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'articleList/list_5.html'),
+            filename: 'list_5.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','list_5.html','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'articleList/list_6.html'),
+            filename: 'list_6.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','list_6.html','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'articleList/list_7.html'),
+            filename: 'list_7.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','list_7.html','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'articleList/list_8.html'),
+            filename: 'list_8.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','list_8.html','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
             template: path.resolve(PAGE_PATH, 'laituiInt/html.js'),
             filename: 'laituiInt.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
             chunks: ['commonjs','laituiInt','vendors'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'completeCase/html.js'),
+            filename: 'completeCase.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','completeCase','vendors'],
             //要把script插入标签里
             inject: 'body'
         }),

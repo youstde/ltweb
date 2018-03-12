@@ -10,6 +10,8 @@ $(document).ready(function(){
             _this.css('borderBottom','4px solid #e83928');
         },500);
     })
+    // var headIndex = window.location.href.split('/')[3];
+    // $(".centerLi").eq(headIndex).css('borderBottom','4px solid #e83928');
 /**
  * 注册弹窗
  *

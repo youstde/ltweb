@@ -9,14 +9,21 @@ var familyLi = $Dom('.listTopUl .topUlList');
 var oPhone = $Dom('.phone')[0];
 var oContent = $Dom('.phoneContent');
 var isLeft = false;
+$('.navImg').click(function () {
+    $('#register').css("display","block");
+    $('#closeReg').click(function () {
+        $('#register').css('display','none');
+    })
+})
 /*
  *
  * topUlList 透明度变化
  */
 $('.topUlList').click(function () {
     console.log($(this).siblings());
-    $(this).children('img').css("opacity","1");
+    $(this).children('img').css({'opacity':'1','boxShadow':'rgba(43,122,254,0.3) 0px 0px 13px 2px'});
     $(this).siblings().children('img').css("opacity","0.6");
+
 
 })
 
@@ -45,6 +52,7 @@ for(let i = 0; i <= familyLi.length - 1 ;i ++){
     oContent[0].style.display = "block";
     familyLi[i].onclick = function (e) {
         var e = event || window.event;
+        $('.contentImg').animate({left:'0'});
         event.stopPropagation();
         for(var index = 0;index <= 4; index ++){
             oContent[index].style.display = "none";

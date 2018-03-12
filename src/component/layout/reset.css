@@ -133,6 +133,7 @@ a{
 .head-right .register{
   margin-left: 10px;
   background-color: #2b90ed;
+  border: 1px solid #2b90ed;
 }
 .login a {
   text-align: center;
@@ -151,7 +152,8 @@ a{
   color: #fff;
 }
 .head-right .register:hover{
-  background-color: #2b90ed;
+  background-color: #2b7ded;
+  border: 1px solid #2b90ed;
 }
 .head-right .register:hover a{
   color: #fff;

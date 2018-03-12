@@ -12,8 +12,9 @@ module.exports={
         'index': './src/page/index/index.js',
         'case': './src/page/case/index.js',
         'about': './src/page/about/index.js',
+        'completeCase': './src/page/completeCase/index.js',
         'dynamic': './src/page/dynamic/index.js',
-        'interaction': './src/page/interaction/index.js',
+        'interaction': './src/page/completeCase/index.js',
         'vendors':['zepto']
     },
     output: {
@@ -73,10 +74,10 @@ module.exports={
         }),
         new htmlWebpackPlugin({
             title: '',
-            template: path.resolve(PAGE_PATH, 'interaction/html.js'),
-            filename: 'interaction.html',
+            template: path.resolve(PAGE_PATH, 'completeCase/html.js'),
+            filename: 'completeCase.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
-            chunks: ['commonjs','interaction','vendors'],
+            chunks: ['commonjs','completeCase','vendors'],
             //要把script插入标签里
             inject: 'body'
         }),
