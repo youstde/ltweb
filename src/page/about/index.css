@@ -112,6 +112,7 @@
               color: #666;
               font-size: 17px; }
             .navAll .about .aboutTab .devHistory .timeTree .timeDate p {
+              width: 222px;
               font-size: 17px;
               font-weight: 350;
               color: #2b90ed;
@@ -119,47 +120,53 @@
               text-align: left; }
           .navAll .about .aboutTab .devHistory .timeTree .timeOne {
             position: absolute;
-            top: 246px;
+            top: 250px;
             left: 24%;
             text-align: right; }
             .navAll .about .aboutTab .devHistory .timeTree .timeOne h5 {
               margin-right: 55px; }
           .navAll .about .aboutTab .devHistory .timeTree .timeTwo {
             position: absolute;
-            top: 380px;
+            top: 385px;
             left: 24%;
             text-align: right; }
             .navAll .about .aboutTab .devHistory .timeTree .timeTwo h5 {
               margin-right: 55px; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeTwo p {
+              text-align: right; }
           .navAll .about .aboutTab .devHistory .timeTree .timeThree {
             position: absolute;
-            top: 514px;
+            top: 519px;
             left: 24%;
             text-align: right; }
             .navAll .about .aboutTab .devHistory .timeTree .timeThree h5 {
               margin-right: 55px; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeThree p {
+              text-align: right; }
           .navAll .about .aboutTab .devHistory .timeTree .timeFour {
             position: absolute;
-            top: 652px;
+            top: 657px;
             left: 24%;
             text-align: right; }
             .navAll .about .aboutTab .devHistory .timeTree .timeFour h5 {
               margin-right: 55px; }
+            .navAll .about .aboutTab .devHistory .timeTree .timeFour p {
+              text-align: right; }
           .navAll .about .aboutTab .devHistory .timeTree .timeFive {
             position: absolute;
-            top: 176px;
+            top: 181px;
             right: 17%; }
           .navAll .about .aboutTab .devHistory .timeTree .timeSix {
             position: absolute;
-            top: 310px;
+            top: 315px;
             right: 17%; }
           .navAll .about .aboutTab .devHistory .timeTree .timeSeven {
             position: absolute;
-            top: 448px;
+            top: 453px;
             right: 17%; }
           .navAll .about .aboutTab .devHistory .timeTree .timeEgiht {
             position: absolute;
-            top: 588px;
+            top: 593px;
             right: 17%; }
       .navAll .about .aboutTab .contact {
         width: 1100px;

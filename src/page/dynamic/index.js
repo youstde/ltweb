@@ -11,6 +11,7 @@ require('../../component/layout/common');
     $('.getMore').click(function () {
         $(".show").show();
         $('.getMore').html("没有更多了");
+        // $('.getMore').css("color","#333");
     })
 })()
 

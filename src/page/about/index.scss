@@ -134,6 +134,7 @@
                 //text-align: right;
               }
               p{
+                width: 222px;
                 font-size: 17px;
                 font-weight: 350;
                 color: #2b90ed;
@@ -143,7 +144,7 @@
             }
             .timeOne{
               position: absolute;
-              top: 246px;
+              top: 250px;
               left: 24%;
               text-align: right;
               h5{
@@ -152,49 +153,58 @@
             }
             .timeTwo{
               position: absolute;
-              top: 380px;
+              top: 385px;
               left: 24%;
               text-align: right;
               h5{
                 margin-right: 55px;
+              }
+              p{
+                text-align: right;
               }
             }
             .timeThree{
               position: absolute;
-              top: 514px;
+              top: 519px;
               left: 24%;
               text-align: right;
               h5{
                 margin-right: 55px;
+              }
+              p{
+                text-align: right;
               }
             }
             .timeFour{
               position: absolute;
-              top: 652px;
+              top: 657px;
               left: 24%;
               text-align: right;
               h5{
                 margin-right: 55px;
               }
+              p{
+                text-align: right;
+              }
             }
             .timeFive{
               position: absolute;
-              top: 176px;
+              top: 181px;
               right: 17%;
             }
             .timeSix{
               position: absolute;
-              top: 310px;
+              top: 315px;
               right: 17%;
             }
             .timeSeven{
               position: absolute;
-              top: 448px;
+              top: 453px;
               right: 17%;
             }
             .timeEgiht{
               position: absolute;
-              top: 588px;
+              top: 593px;
               right: 17%;
             }
           }

@@ -63,12 +63,14 @@ a{
   height: 70px;
   line-height: 70px;
 }
+
 .head-center ,.head-center .centerUl{
   width: auto;
   height: 70px;
   line-height: 70px;
   display: inline-block;
 }
+
 .head-center .centerUl li{
   width: 60px;
   float: left;
@@ -345,4 +347,151 @@ footer .declare p{
   color: #dcdcdd;
   margin-top: 20px;
   text-align:center
+}
+
+
+/*弹窗*/
+.applyFormBox {
+  width: 780px;
+  height: 630px;
+  background-color: #fff;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  -ms-transform:translate(-50%);   /* IE 9 */
+  -moz-transform:translate(-50%);   /* Firefox */
+  -webkit-transform:translate(-50%); /* Safari 和 Chrome */
+  -o-transform:translate(-50%);   /* Opera */
+  z-index: 999;
+  border-radius: 10px;
+  padding: 20px 60px;
+}
+.closeFormBoxBtn {
+  width: 32px;
+  height: 32px;
+  background: url('http://imgcow.oss-cn-hangzhou.aliyuncs.com/Website/Img/formCloseBtnIcon.png')no-repeat center/100% 100%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.welcomeApply{
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+  padding-top: 12px;
+  font-weight: 300;
+  padding-bottom: 8px;
+}
+.formTopTip {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  font-weight: 300;
+}
+.applyFormBox input {
+  border: 1px solid #ddd;
+  width: 340px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 3px;
+  color: #666;
+}
+::-webkit-input-placeholder{
+  color: #ddd;
+  font-weight: lighter;
+}    /* 使用webkit内核的浏览器 */
+:-moz-placeholder{
+  color: #ddd;
+  font-weight: lighter;
+}                  /* Firefox版本4-18 */
+::-moz-placeholder{
+  color: #ddd;
+  font-weight: lighter;
+}                  /* Firefox版本19+ */
+:-ms-input-placeholder{
+  color: #ddd;
+  font-weight: lighter;
+}           /* IE浏览器 */
+.lineOneLeft {
+  float: left;
+  margin-right: 55px;
+}
+.applyFormBox p {
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  padding: 20px 0 5px 0;
+}
+.applyFormBox select {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+#usertextArea {
+  width: 100%;
+  height: 110px;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#applyFormSubmitBtn {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  background-color: #1674f7;
+  color: #fff;
+  margin: 30px auto 0;
+}
+.applyFormBgBox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba( 0, 0, 0, 0.6);
+}
+ul.areaList{
+  position: absolute;
+  top: 87px;
+  left: 0;
+  width: 330px;
+  padding: 10px 15px;
+  height: 190px;
+  background: #fff;
+  border: solid 1px #ddd;
+  border-top: none;
+  font-size: 0;
+}
+ul.areaList li{
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  padding: 0 12px;
+  color: #999;
+  font-weight: lighter;
+  cursor: pointer;
+}
+ul.areaList li.active{
+  color: #1a73f0;
+}
+/*E=申请表格弹窗*/
+.toLogin{
+  margin-top: 10px;
+  width: 100%;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #999;
+  font-weight: lighter;
 }

@@ -85,4 +85,89 @@
 
         </form>
     </div>
+
+    <!-- 在线申请弹窗 -->
+    <div class="applyFormBgBox" style = 'display:none'>
+        <div class="applyFormBox">
+            <div class="closeFormBoxBtn"></div>
+            <div class="welcomeApply">欢迎注册</div>
+            <div class ='formTopTip'>请填写以下信息，以便我们能更好的了解您的需求和帮助您</div>
+            <div class="lineOneBox">
+                <div class="lineOneLeft">
+                    <p>姓名</p>
+                    <input type="text" id ='userName' placeholder="请输入姓名">
+                </div>
+                <div class="lineOneRight">
+                    <p>QQ邮箱</p>
+                    <input type="text" id ='qqEmail' placeholder="请输入邮箱网址">
+                </div>
+            </div>
+            <div class="lineOneBox">
+                <div class="lineOneLeft">
+                    <p>手机号码</p>
+                    <input type="text" id ='userIphone' placeholder="请输入手机号码">
+                </div>
+                <div class="lineOneRight">
+                    <p>公司</p>
+                    <input type="text" id ='userCompany' placeholder="请输入公司名称">
+                </div>
+            </div>
+            <div class="lineOneBox">
+                <div class="lineOneLeft" style="position: relative">
+                    <p>所属区域</p>
+                    <input type="text" id ='select' readonly placeholder="请选择" style="background: url(http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiyun/arrowDown.png) no-repeat;
+                       background-size: 40px; background-position: center right">
+                    <ul class="areaList" style="display:none">
+                        <li>北京市</li>
+                        <li>天津市</li>
+                        <li>上海市</li>
+                        <li>重庆市</li>
+                        <li>河北省</li>
+                        <li>河南省</li>
+                        <li>云南省</li>
+                        <li>辽宁省</li>
+                        <li>湖南省</li>
+                        <li>安徽省</li>
+                        <li>山东省</li>
+                        <li>江苏省</li>
+                        <li>浙江省</li>
+                        <li>江西省</li>
+                        <li>湖北省</li>
+                        <li>甘肃省</li>
+                        <li>山西省</li>
+                        <li>内蒙古</li>
+                        <li>陕西省</li>
+                        <li>吉林省</li>
+                        <li>福建省</li>
+                        <li>贵州省</li>
+                        <li>广东省</li>
+                        <li>青海省</li>
+                        <li>四川省</li>
+                        <li>海南省</li>
+                        <li>台湾省</li>
+                        <li>西藏</li>
+                        <li>黑龙江省</li>
+                        <li>广西壮族</li>
+                        <li>宁夏回族</li>
+                        <li>新疆维吾尔</li>
+                        <li>香港特别行政区</li>
+                        <li>澳门特别行政区</li>
+                    </ul>
+                </div>
+                <div class="lineOneRight">
+                    <p>公司网址</p>
+                    <input type="text" id = 'userCompany' placeholder="请输入公司网址">
+                </div>
+            </div>
+            <div class="lineOneBox">
+                <p>您的需求</p>
+                <textarea id = 'usertextArea' name="name" rows="8" cols="80" maxlength="100"
+                          placeholder="请填写您的需求"></textarea>
+            </div>
+            <div id='applyFormSubmitBtn'>注册</div>
+            <div class="toLogin">已有账号？<a href="//laitui.adbaitai.com/login" style="color: #1674f7">立即登录</a></div>
+        </div>
+    </div>
+
+
 </header>

@@ -70,3 +70,8 @@ for(let i = 0; i <= familyLi.length - 1 ;i ++){
         }
     }
 }
+
+$('.requireAdd').click(function () {
+    $('body').css('overflow','hidden');
+    $('.applyFormBgBox').css('display', 'block');
+})
