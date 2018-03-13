@@ -52,8 +52,8 @@ window.onload=function () {
             oData3.innerHTML = num3 + "亿";
         },100);
         timer4 = setInterval(function () {
-            num4 += 1000;
-            if(num4 >= 15000){
+            num4 += 10000;
+            if(num4 >= 150000){
                 clearInterval(timer4);
             }
             oData4.innerHTML = num4;

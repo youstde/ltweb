@@ -24,7 +24,8 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --host 127.0.0.1 --open",
-    "pre": "rm -rf dist && webpack --config webpack.production.config.js"
+    "pre": "rm -rf dist && webpack --config webpack.production.config.js",
+    "prod": "rm -rf dist && webpack --config webpack.production.config.js"
   },
   "author": "",
   "license": "ISC"
