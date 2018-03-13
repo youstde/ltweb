@@ -1,5 +1,5 @@
 body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}
-body{ font-size:14px; font-family:微软雅黑;font-family:'Microsoft YaHei';font-style:normal;}
+body{ font-size:14px; font-family:"PingFang SC", "Microsoft YaHei", "微软雅黑"; font-style:normal;}
 a{ text-decoration:none}
 a,a:hover{  transition:background 0.5s linear;-webkit-transition:background 0.5s linear;-moz-transition:background 0.5s linear;-o-transition:background 0.5s linear;}
 em, i{font-style: normal;}
