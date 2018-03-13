@@ -23,7 +23,7 @@ window.onload=function () {
     var isCount = true;
     $(document).scroll(function(){
     var numScrollTop = $(document).scrollTop();
-    if(isCount && numScrollTop >= 1802){
+    if(isCount && numScrollTop >= 1502){
         var mathTimer = null,num1 = 0,num2 = 1,num3 = 0,num4 = 0,timer1 = null,timer2=null,timer3=null,timer4=null;
         var oData1 = document.querySelector('#data1');
         var oData2 = document.querySelector('#data2');
@@ -52,8 +52,8 @@ window.onload=function () {
             oData3.innerHTML = num3 + "亿";
         },100);
         timer4 = setInterval(function () {
-            num4 += 10000;
-            if(num4 >= 150000){
+            num4 += 1000;
+            if(num4 >= 15000){
                 clearInterval(timer4);
             }
             oData4.innerHTML = num4;
