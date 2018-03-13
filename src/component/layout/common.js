@@ -9,24 +9,8 @@ $(document).ready(function(){
         setTimeout(function () {
             _this.css('borderBottom','4px solid #e83928');
         },500);
-    })
-    // var headIndex = window.location.href.split('/')[3];
-    // $(".centerLi").eq(headIndex).css('borderBottom','4px solid #e83928');
-/**
- * 注册弹窗
- *
- */
-    // $('.register').click(function () {
-    //     $('#register').css("display","block");
-    //     $('#closeReg').click(function () {
-    //         $('#register').css('display','none');
-    //     })
-    // });
+    });
 
-
-    /*
-这里写一些公共的js逻辑代码
- */
     $(".register").click(function(){
         $('body').css('overflow','hidden');
         $('.applyFormBgBox').css('display', 'block');
@@ -85,7 +69,7 @@ $(document).ready(function(){
             })
         }
     });
-// 验证手机号
+    // 验证手机号
     function checkPhone () {
         var tel =$('#userIphone').val();
         var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
@@ -98,8 +82,4 @@ $(document).ready(function(){
             return true;
         }
     }
-
-
-
 });
-console.log('common');

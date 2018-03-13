@@ -1,25 +1,13 @@
-html,body{
-  height: 100%;
-  width:100%;
-}
-body{
-
-  backgroud: red;
-}
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}
+body{ font-size:14px; font-family:微软雅黑;font-family:'Microsoft YaHei';font-style:normal;}
+a{ text-decoration:none}
+a,a:hover{  transition:background 0.5s linear;-webkit-transition:background 0.5s linear;-moz-transition:background 0.5s linear;-o-transition:background 0.5s linear;}
+em, i{font-style: normal;}
+ul, ol, li{margin:0; padding:0; list-style: none;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}
 
 /*head部分*/
-
-*{
-   padding: 0;
-   margin: 0;
-  font-family: "PingFang SC";
- }
-ul,ol,dl,li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
 .headAll{
   width: 100%;
   height: 70px;

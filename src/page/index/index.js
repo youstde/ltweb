@@ -18,8 +18,6 @@ window.onload=function () {
     }
 
     //数字滚动
-    console.log($('.btData').scrollTop());
-    console.log($(document).scrollTop())
     var isCount = true;
     $(document).scroll(function(){
     var numScrollTop = $(document).scrollTop();
