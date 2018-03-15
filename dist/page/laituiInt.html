@@ -12,14 +12,12 @@
 <link href="./style.css" rel="stylesheet"></head>
 
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qWFURt9XtF3ZAGCAnVVTGbHuIrGkx9W6"></script>
-<body>
+<body style="position: relative; min-width: 1200px">
 <header class="headAll">
     <div class="head">
-
-
     <div class="head-left">
         <div class="leftChild">
-            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/btlogo.png" alt="logo">
+            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/btlogo.png" alt="logo" height="33px">
             <span></span>
             <b>百泰传媒</b>
         </div>
@@ -35,7 +33,7 @@
                 <div id="actLine"></div>
             </li>
             <li class="centerLi">
-                <a href="//ltyun.adbaitai.com">来推云</a>
+                <a href="//ltyun.adbaitai.com" target="_blank">来推云</a>
                 <div id="actLine"></div>
             </li>
             <li class="centerLi">
@@ -59,49 +57,6 @@
         <div class="register">
             <a href="javascript:void(0);">注册</a>
         </div>
-    </div>
-    <div id="register">
-        <h2>欢迎注册</h2>
-        <p>请填写一下信息，以便我们能更好的了解您的需求和帮助您</p>
-        <form action="">
-            <div class="regList">
-                <label for="userName">姓名</label>
-                <input type="text" id="userName" placeholder="请输入姓名">
-            </div>
-            <div class="regList">
-                <label for="userPhone">手机号码</label>
-                <input type="text" id="userPhone" placeholder="请输入手机号码">
-            </div>
-            <div class="regList">
-                <label for="qqEmail">QQ邮箱</label>
-                <input type="text" id="qqEmail" placeholder="请输入邮箱地址">
-            </div>
-            <div class="regList">
-                <label for="userCom">公司</label>
-                <input type="text" id="userCom" placeholder="请输入公司名称">
-            </div>
-            <div class="regList">
-                <label for="userAdd">所属区域</label>
-                <input type="text" id="userAdd" placeholder="请选择">
-            </div>
-            <div class="regList">
-                <label for="userUrl">公司网址</label>
-                <input type="text" id="userUrl" placeholder="请输入公司网址">
-            </div>
-            <div class="regList lastRegList">
-                <label for="userReq">您的需求</label>
-                <textarea name="" id="userReq" cols="30" rows="10"></textarea>
-                <!--<input type="textarea" id="userReq" placeholder="请输入您的需求">-->
-            </div>
-
-
-
-
-            <button>注册</button>
-            <span>已有账号？<a href="//laitui.adbaitai.com/login">立即登录</a></span>
-            <i id="closeReg">X</i>
-
-        </form>
     </div>
 
     <!-- 在线申请弹窗 -->
@@ -190,88 +145,121 @@
     </div>
 </header>
 <style>
-    @charset "UTF-8";
-    .navImg {
+    .lthd-banner {
         width: 100%;
-        height: auto; }
-    .navImg img {
-        width: 100%;
-        height: auto; }
-
+        height: 425px;
+        background: url(http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthu-banner.jpg) no-repeat 100% 100%;
+    }
+    .lthd-banner .lthd-banner-main{
+        position: relative;
+        width: 1100px;
+        height: 425px;
+        margin: 0 auto;
+    }
+    .lthd-banner .lthd-banner-main .img{
+        height: 425px;
+        width: 740px;
+        position: absolute;
+        top: 0;
+        left: -80px;
+    }
     .ltInteractionAll {
         width: 100%;
-        height: 507px;
-        background: #ffffff;
-        overflow: hidden; }
+        background: #fff;
+    }
     .ltInteractionAll .ltInteraction {
         width: 1100px;
-        height: 507px;
-        margin: 0 auto; }
+        margin: 0 auto;
+    }
     .ltInteractionAll .ltInteraction h2 {
-        font-size: 29.5px;
-        font-weight: normal;
-        color: #333333;
+        font-size: 29px;
+        height: 29px;
+        line-height: 29px;
+        color: #333;
         text-align: center;
-        padding-top: 99px; }
+        padding-top: 90px;
+        font-weight: 400;
+    }
     .ltInteractionAll .ltInteraction p {
         font-size: 14px;
-        color: #999999;
-        padding-top: 35px;
-        text-align: center; }
+        height: 14px;
+        line-height: 14px;
+        color: #999;
+        padding-top: 33px;
+        text-align: center;
+    }
     .ltInteractionAll .ltInteraction .family {
         width: 1100px;
-        height: 240px;
         display: flex;
         justify-content: space-between;
-        margin-top: 90px; }
+        margin-top: 90px;
+    }
     .ltInteractionAll .ltInteraction .family .familyList {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         width: 25%;
-        height: 240px; }
+        padding-bottom: 70px;
+    }
     .ltInteractionAll .ltInteraction .family .familyList img {
         width: 93px;
-        height: 93px; }
+        height: 93px;
+    }
     .ltInteractionAll .ltInteraction .family .familyList h3 {
-        margin-top: 25px;
+        margin-top: 24px;
         font-size: 18px;
-        color: #333333;
-        font-weight: normal; }
+        height: 18px;
+        line-height: 18px;
+        color: #333;
+        font-weight: normal;
+    }
     .ltInteractionAll .ltInteraction .family .familyList p {
         font-size: 14px;
         font-color: #666;
-        padding-top: 21px; }
+        padding-top: 21px;
+    }
     .ltInteractionAll .ltInteraction .family .familyList span {
         color: #666;
         font-size: 14px;
-        margin-top: 18px; }
+        height: 14px;
+        line-height: 14px;
+        margin-top: 20px;
+    }
 
     .appSceneAll {
         width: 100%;
         height: 912px;
-        background: #fafcfe; }
+        background: #fafcfe;
+    }
     .appSceneAll .appScene {
         width: 1100px;
         height: 912px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        position: relative;
+    }
     .appSceneAll .appScene h2 {
         padding-top: 86px;
-        font-size: 29.5px;
-        color: #333333;
+        font-size: 29px;
+        height: 29px;
+        line-height: 29px;
+        color: #333;
         font-weight: normal;
-        text-align: center; }
+        text-align: center;
+    }
     .appSceneAll .appScene .sceneLeft {
-        width: 55%;
+        width: 605px;
+        padding-left: 40px;
         height: 796px;
-        float: left; }
+        float: left;
+    }
     .appSceneAll .appScene .sceneLeft .leftListTop {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+    }
     .appSceneAll .appScene .sceneLeft .leftListTop .listTopUl {
         width: 100%;
-        height: 100%;
+        height: 647px;
         display: flex;
         flex-wrap: wrap;
         padding-top: 149px;
@@ -289,7 +277,7 @@
         width: 146px;
         height: 146px;
         opacity: 0.7;
-        　filter: alpha(opacity=60);
+        filter: alpha(opacity=60);
         border-radius: 50%;
         box-shadow: #b2d8ff 0px -1px 4px; }
     .appSceneAll .appScene .sceneLeft .leftListTop .listTopUl .topUlList h5, .appSceneAll .appScene .sceneLeft .leftListTop .listTopUl .bottomUlList h5 {
@@ -300,11 +288,13 @@
         font-weight: normal; }
     .appSceneAll .appScene .sceneLeft .leftListBottom {
         width: 100%;
-        height: 50%; }
+        height: 50%;
+    }
     .appSceneAll .appScene .sceneLeft .leftListBottom .listBottomUl {
         width: 100%;
         height: 100%;
-        display: flex; }
+        display: flex;
+    }
     .appSceneAll .appScene .sceneLeft .leftListBottom .listBottomUl .bottomUlList {
         width: 33%;
         height: 70%;
@@ -313,224 +303,297 @@
         align-items: center; }
     .appSceneAll .appScene .sceneLeft .leftListBottom .listBottomUl .bottomUlList img {
         width: 146px;
-        height: 146px; }
+        height: 146px;
+    }
     .appSceneAll .appScene .sceneLeft .leftListBottom .listBottomUl .bottomUlList h5 {
         font-size: 20px;
         color: #333;
         margin-top: 30px;
         text-align: center;
-        font-weight: normal; }
+        font-weight: normal;
+    }
     .appSceneAll .appScene .sceneRight {
-        width: 45%;
+        position: absolute;
+        top: 86px;
+        right: 5px;
+        width: 450px;
         height: 796px;
-        float: left; }
+    }
     .appSceneAll .appScene .sceneRight .phone {
-        width: 460px;
-        height: 724px;
+        width: 450px;
+        height: 777px;
         background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/phone.png") 0 0 no-repeat;
-        background-size: 460px 724px;
+        background-size: 450px 777px;
         position: relative;
         top: 0;
-        left: 0; }
+        left: 0;
+    }
     .appSceneAll .appScene .sceneRight .phone .phoneContent {
-        width: 259px;
-        height: 461px;
+        width: 258px;
+        height: 471px;
         position: absolute;
-        top: 107px;
-        left: 104px;
-        overflow: hidden; }
+        top: 148px;
+        left: 97px;
+        overflow: hidden;
+    }
     .appSceneAll .appScene .sceneRight .phone .phoneContent .contentImg {
-        width: 518px;
-        height: 475px;
-        position: relative; }
+        width: 516px;
+        height: 471px;
+        position: relative;
+    }
     .appSceneAll .appScene .sceneRight .phone .phoneContent .contentImg .allImg {
-        width: 518px;
-        height: 475px;
-        position: absolute; }
+        width: 516px;
+        height: 471px;
+        position: absolute;
+    }
     .appSceneAll .appScene .sceneRight .phone .phoneContent .contentImg img {
-        width: 259px;
-        height: 475px;
-        float: left; }
+        width: 258px;
+        height: 471px;
+        float: left;
+    }
     .appSceneAll .appScene .sceneRight .phone .phoneBtn {
         width: 100px;
         height: 25px;
         position: absolute;
         left: 183px;
-        bottom: 10px;
-        text-align: center; }
+        bottom: 28px;
+        text-align: center;
+        font-size: 0;
+    }
     .appSceneAll .appScene .sceneRight .phone .phoneBtn .btnLeft, .appSceneAll .appScene .sceneRight .phone .phoneBtn .btnRight {
         display: inline-block;
-        width: 24px;
+        width: 15px;
         height: 15px;
         border-radius: 14px;
-        background: #1599ff;
+        background: none;
         margin-top: 5px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        border: 1px solid #79c5ff; }
+        border: 1px solid #1599ff;
+    }
     .appSceneAll .appScene .sceneRight .phone .phoneBtn .btnRight {
-        background: #f3f8fe; }
-
+        border: 1px solid #79c5ff;
+        margin-left: 8px;
+    }
+    .appSceneAll .appScene .sceneRight .phone .phoneBtn .btnActive{
+        background: #1599ff;
+        width: 24px;
+        height: 15px;
+    }
     .classExmAll {
         width: 100%;
-        height: 910px;
-        background: #fff; }
+        height: 920px;
+        background: #fff;
+    }
     .classExmAll .classExm {
-        width: 1120px;
+        width: 1100px;
         height: 910px;
-        margin: 0 auto; }
+        margin: 0 auto;
+    }
     .classExmAll .classExm h2 {
-        width: 118px;
+        width: 100%;
+        text-align: center;
         height: 28px;
+        line-height: 28px;
         font-size: 28px;
         font-weight: normal;
-        color: #333333;
-        margin: 86px auto 121px; }
+        color: #333;
+        padding-top: 86px;
+        padding-bottom: 121px;
+    }
     .classExmAll .classExm .exmDet {
         width: 100%;
-        height: 559px; }
+        height: 555px;
+    }
     .classExmAll .classExm .exmDet .exmDetL, .classExmAll .classExm .exmDet .exmDetC {
         float: left;
-        width: 265px;
+        width: 263px;
         height: 559px;
+        margin-left: 56px;
         text-align: center;
         -webkit-border-radius: 37px;
         -moz-border-radius: 37px;
         border-radius: 37px;
         -webkit-box-shadow: 1px 1px 52px #e4f0fb;
         -moz-box-shadow: 1px 1px 52px #e4f0fb;
-        box-shadow: 1px 1px 52px #e4f0fb; }
+        box-shadow: 1px 1px 52px #e4f0fb;
+    }
     .classExmAll .classExm .exmDet .exmDetL img, .classExmAll .classExm .exmDet .exmDetC img {
-        width: 265px;
-        height: 559px; }
+        width: 263px;
+        height: 555px;
+    }
     .classExmAll .classExm .exmDet .exmDetL h5, .classExmAll .classExm .exmDet .exmDetC h5 {
         margin-top: 31px;
         font-weight: normal;
         color: #3388ff;
-        font-size: 20px; }
+        font-size: 20px;
+    }
     .classExmAll .classExm .exmDet .exmDetC {
-        margin-left: 80px; }
+        margin-left: 80px;
+    }
     .classExmAll .classExm .exmDet .exmDetR {
         float: left;
         margin-left: 153px;
         width: 265px;
         height: 559px;
-        background: #fff; }
+        background: #fff;
+    }
     .classExmAll .classExm .exmDet .exmDetR h3 {
-        margin-top: 70px;
+        margin-top: 69px;
+        height: 32px;
+        line-height: 32px;
         font-size: 32px;
-        color: #333333;
-        font-weight: normal; }
-    .classExmAll .classExm .exmDet .exmDetR h4 {
-        margin-top: 86px;
-        font-size: 24px;
-        color: #666666;
+        color: #333;
         font-weight: normal;
-        margin-bottom: 23px; }
+    }
+    .classExmAll .classExm .exmDet .exmDetR h4 {
+        margin-top: 50px;
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+        color: #666;
+        font-weight: normal;
+        margin-bottom: 23px;
+    }
     .classExmAll .classExm .exmDet .exmDetR .exmLine {
         width: 265px;
         display: block;
         margin-top: 36px;
-        border: 1px dashed #e6e6e6;
-        background: #e6e6e6; }
+        height: 1px;
+        background: #e6e6e6;
+    }
     .classExmAll .classExm .exmDet .exmDetR .detRCont {
         width: 225px;
-        height: 140px; }
-    .classExmAll .classExm .exmDet .exmDetR .detRCont .pointRate img, .classExmAll .classExm .exmDet .exmDetR .detRCont .pointPrice img, .classExmAll .classExm .exmDet .exmDetR .detRCont .Roi img {
+    }
+    .classExmAll .classExm .exmDet .exmDetR .detRCont .pointRate, .classExmAll .classExm .exmDet .exmDetR .detRCont
+    .pointPrice, .classExmAll .classExm .exmDet .exmDetR .detRCont .Roi{
+        height: 44px;
+        line-height: 44px;
+        margin-bottom: 3px;
+    }
+    .classExmAll .classExm .exmDet .exmDetR .detRCont img{
         width: 44px;
         height: 44px;
-        vertical-align: middle; }
+        vertical-align: top;
+    }
     .classExmAll .classExm .exmDet .exmDetR .detRCont .pointRate h5, .classExmAll .classExm .exmDet .exmDetR .detRCont .pointPrice h5, .classExmAll .classExm .exmDet .exmDetR .detRCont .Roi h5 {
         font-size: 20px;
         color: #999;
         margin-left: 12px;
         display: inline-block;
-        font-weight: normal; }
+        font-weight: normal;
+    }
     .classExmAll .classExm .exmDet .exmDetR .exmDetRBtn {
         width: 140px;
         height: 40px;
         background: #3388ff;
         text-align: center;
         line-height: 40px;
-        margin-top: 50px; }
+        margin-top: 76px;
+        margin-left: 12px;
+        border-radius: 2px;
+    }
     .classExmAll .classExm .exmDet .exmDetR .exmDetRBtn a {
-        color: #fff; }
+        color: #fff;
+    }
     .classExmAll .classExm .exmDet .exmDetR .exmDetRBtn:hover {
-        background: #2b7ded; }
-
+        background: #2b7ded;
+    }
     .medieAdvantageALl {
         width: 100%;
         height: 540px;
-        background: #fafcfe; }
+        background: #fafcfe;
+    }
     .medieAdvantageALl .medieAdvantage {
         width: 1100px;
         height: 540px;
-        margin: 0 auto; }
+        margin: 0 auto;
+    }
     .medieAdvantageALl .medieAdvantage h2 {
         width: 120px;
-        font-size: 29.5px;
+        height: 29px;
+        line-height: 29px;
+        font-size: 29px;
         font-weight: normal;
-        color: #333333;
+        color: #333;
         margin: 0 auto 83px;
-        padding-top: 86px; }
+        padding-top: 86px;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageImgsecond, .medieAdvantageALl .medieAdvantage .AdvantageImgfouth {
-        padding-left: 44px; }
+        padding-left: 44px;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageTop {
-        width: 46%;
+        width: 462px;
         height: 138px;
         float: left;
-        padding-left: 37px;
-        border-right: 1px dashed #efefef;
-        border-bottom: 1px dashed #efefef; }
+        padding-left: 87px;
+        border-right: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageTop .AdvantageImg {
         float: left;
         width: 50px;
-        height: 50px; }
+        height: 50px;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageTop .AdvantageImg img {
         width: 50px;
         height: 50px;
-        vertical-align: middle; }
+        vertical-align: middle;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageTop .Advantagetitle {
         width: auto;
         height: 138px;
-        margin-left: 76px; }
+        margin-left: 76px;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageTop .Advantagetitle h5 {
         margin-top: 2px;
         font-size: 18px;
         color: #333;
-        font-weight: normal; }
+        font-weight: normal;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageTop .Advantagetitle p {
         margin-top: 20px;
         font-size: 14px;
-        color: #666; }
+        color: #666;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageImgsecond {
-        border-right: none; }
+        border-right: none;
+
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageImgthird, .medieAdvantageALl .medieAdvantage .AdvantageImgfouth {
-        border-bottom: none; }
+        border-bottom: none;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageImgthird .AdvantageImg, .medieAdvantageALl .medieAdvantage .AdvantageImgthird .Advantagetitle, .medieAdvantageALl .medieAdvantage .AdvantageImgfouth .AdvantageImg, .medieAdvantageALl .medieAdvantage .AdvantageImgfouth .Advantagetitle {
-        margin-top: 53px; }
+        margin-top: 53px;
+    }
     .medieAdvantageALl .medieAdvantage .AdvantageImgfouth {
-        border-right: none; }
+        border-right: none;
+    }
 
     .partenMediaAll {
         width: 100%;
-        height: 536px;
-        background: #ffffff; }
+        background: #ffffff;
+    }
     .partenMediaAll .partenMedia {
         width: 1100px;
-        height: 536px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        padding-bottom: 70px;
+    }
     .partenMediaAll .partenMedia h2 {
-        font-size: 29.5px;
+        font-size: 29px;
+        height: 29px;
+        line-height: 29px;
         font-weight: normal;
-        color: #333333;
+        color: #333;
         text-align: center;
-        padding-top: 99px; }
+        padding-top: 86px;
+    }
     .partenMediaAll .partenMedia img {
         width: 1040px;
         height: 305px;
-        margin-top: 44px; }
+        margin-top: 44px;
+    }
 
     .requireAddAll {
         width: 100%;
@@ -541,35 +604,79 @@
         box-sizing: border-box;
         background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sqrz.png") 0 0 no-repeat;
         background-size: 100% 285px;
-        margin: 0 auto; }
+        margin: 0 auto;
+    }
     .requireAddAll .requireAdd {
         width: 234px;
         height: 67px;
         line-height: 67px;
         text-align: center;
         background: #3388ff;
-        margin: 0 auto; }
+        margin: 0 auto;
+        border-radius: 2px;
+        overflow: hidden;
+    }
     .requireAddAll .requireAdd a {
-        height: 40px;
-        line-height: 40px;
+        display: block;
+        width: 234px;
+        height: 67px;
+        line-height: 67px;
         color: #fff;
-        font-size: 23px; }
+        font-size: 23px;
+        font-weight: 300;
+        border-radius: 2px;
+        text-align: center;
+    }
     .requireAddAll .requireAdd:hover {
-        background-color: #1674f7; }
-
-    /*# sourceMappingURL=index.css.map */
-
-
+        background-color: #1674f7;
+    }
+    .lthd-banner .lt-banner-main-txt{
+        margin-left: 535px;
+        width: 565px;
+        height: 295px;
+        padding-top: 130px;
+    }
+    .lthd-banner .lt-banner-main-txt .txt-1{
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        font-size: 48px;
+        color: #333;
+    }
+    .lthd-banner .lt-banner-main-txt .txt-2{
+        margin-top: 26px;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 30px;
+        color: #333;
+        font-weight: 300;
+    }
+    .lthd-banner .lt-banner-main-txt .txt-btn{
+        width: 120px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        margin-top: 44px;
+        border: solid 1px #333;
+    }
 </style>
-<div class="navImg">
-    <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthdbanner.jpg" alt="">
+<div class="lthd-banner">
+    <div class="lthd-banner-main">
+        <div class="img"><img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-pic.png" width="740px"></div>
+        <div class="lt-banner-main-txt">
+            <div class="txt-1">我们更懂移动流量变革</div>
+            <div class="txt-2">来推互动-移动流量变现服务商</div>
+            <div class="txt-btn">我要合作</div>
+        </div>
+    </div>
 </div>
 <!--来推互动-->
 <div class="ltInteractionAll">
     <div class="ltInteraction">
-        <h2>
-            来推互动
-        </h2>
+        <h2>来推互动</h2>
         <p>来推互动精准定位目标人群，通过游戏互动等形式深入到用户移动手机使用场景中。目前来推互动月活动用户3亿，日曝光15亿，新增媒体15000家，合作客户遍布全国。</p>
         <div class="ltInteractionDet">
             <ul class="family">
@@ -605,47 +712,27 @@
             <div class="leftListTop">
                 <ul class="listTopUl">
                     <li class="topUlList">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/hd1.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/hd1.png">
                         <h5>互动广告</h5>
                     </li>
                     <li class="topUlList">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ds1.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ds1.png">
                         <h5>电商中心</h5>
                     </li>
                     <li class="topUlList">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/game1.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/game1.png">
                         <h5>游戏中心</h5>
                     </li>
                     <li class="topUlList">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/jhy1.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/jhy1.png">
                         <h5>导航页</h5>
                     </li>
-                    <!--<li class="bottomUlList">-->
-                    <!--<img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dz1.png" alt="">-->
-                    <!--<h5>电商中心</h5>-->
-                    <!--</li>-->
                     <li class="topUlList">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dz1.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dz1.png">
                         <h5>内涵段子</h5>
                     </li>
                 </ul>
             </div>
-            <!--<div class="leftListBottom">-->
-                <!--<ul class="listBottomUl">-->
-                    <!--<li class="bottomUlList">-->
-                        <!--<img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/jhy1.png" alt="">-->
-                        <!--<h5>导航页</h5>-->
-                    <!--</li>-->
-                    <!--&lt;!&ndash;<li class="bottomUlList">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dz1.png" alt="">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<h5>电商中心</h5>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                    <!--<li class="bottomUlList">-->
-                        <!--<img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dz1.png" alt="">-->
-                        <!--<h5>内涵段子</h5>-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
         </div>
         <div class="sceneRight">
             <div class="phone">
@@ -653,39 +740,39 @@
                 <div class="phoneContent">
                     <div class="contentImg">
                         <div class="allImg">
-                            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/hdyx.png" alt="">
-                            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/huyx1.png" alt="">
+                            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/hdyx.png">
+                            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/huyx1.png">
                         </div>
                     </div>
                 </div>
                 <!--电商中心-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dszx.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dszx.png">
                     </div>
                 </div>
                 <!--游戏中心-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/yxzx.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/yxzx.png">
                     </div>
                 </div>
                 <!--导航页-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dhy.png" alt="">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dhy1.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dhy.png">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dhy1.png">
                     </div>
                 </div>
                 <!--内涵段子-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/nhdz1.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/nhdz1.png">
                     </div>
                 </div>
 
                 <div class="phoneBtn">
-                    <span class="btnLeft"></span>
+                    <span class="btnLeft btnActive"></span>
                     <span class="btnRight"></span>
                 </div>
             </div>
@@ -712,13 +799,13 @@
                 <h4>推广效果</h4>
                 <div class="detRCont">
                     <div class="pointRate">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/djl.png" alt=""> <h5>点击率: 40.63%</h5>
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/djl.png"> <h5>点击率: 40.63%</h5>
                     </div>
                     <div class="pointPrice">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/djdj.png" alt=""> <h5>点击单价: 0.35元</h5>
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/djdj.png"> <h5>点击单价: 0.35元</h5>
                     </div>
                     <div class="Roi">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/roi.png" alt=""><h5>ROi: 1 : 5.2</h5>
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/roi.png"> <h5>ROi: 1 : 5.2</h5>
                     </div>
                 </div>
                 <div class="exmDetRBtn">
@@ -781,11 +868,11 @@
     </div>
 </div>
 <!--申请入驻-->
-    <div class="requireAddAll">
-        <div class="requireAdd">
-            <a href="javascript:;">申请入驻</a>
-        </div>
+<div class="requireAddAll">
+    <div class="requireAdd">
+        <a href="javascript:;">申请入驻</a>
     </div>
+</div>
 
 <footer>
     <section>
@@ -794,7 +881,7 @@
             <h4>电话： 400-826-0750（工作日 9:00-18:00）</h4>
             <h4>邮箱： baitai@adbaitai.com</h4>
             <h4>地址： 杭州市天目山路217号江南电子大厦10楼</h4>
-            <h4 class = "foot-address">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;北京市朝阳区西大望甲路12号国家广告产业园B座602室</h4>
+            <h4 style="margin-top:6px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;北京市朝阳区西大望甲路12号国家广告产业园B座602室</h4>
 
         </ul>
         <ul class="foot-center">
