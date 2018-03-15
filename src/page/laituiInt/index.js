@@ -14,7 +14,6 @@ var isLeft = false;
  * topUlList 透明度变化
  */
 $('.topUlList').click(function () {
-    console.log($(this).siblings());
     $(this).children('img').css({'opacity':'1','boxShadow':'rgba(43,122,254,0.3) 0px 0px 13px 2px'});
     $(this).siblings().children('img').css("opacity","0.6");
 })
