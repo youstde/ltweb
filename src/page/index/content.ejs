@@ -1,39 +1,50 @@
 <style>
     .indexbanner{
         width: 100%;
+        height: 425px;
+        background: #1c294f;
     }
-    .indexbanner ,.indexbanner img{
+    .indexbanner .indexbanner-box{
+        width: 1100px;
+        margin: 0 auto;
+        height: 425px;
+    }
+    .indexbanner .indexbanner-box a{
         width: 100%;
-        height: auto;
+        height: 425px;
+        display: block;
     }
+    
     .product {
         width: 100%;
-        height: 690px;
+        height: 655px;
     }
     .proSuggest {
-        margin: 100px auto;
+        margin: 90px auto 0;
         width: 1100px;
-        height: 161px;
         text-align: center;
         color: #333;
     }
     .proSuggest h2 {
+        height: 30px;
+        line-height: 30px;
         font-size: 30px;
-        font-weight: normal;
+        font-weight: 400;
     }
     .proSuggest p {
+        line-height: 21px;
         font-size: 14px;
-        margin-top: 33px;
+        margin-top: 30px;
         margin-bottom: 30px;
         color: #999;
+        font-weight: 300;
     }
     .proSuggest .sugDetail {
-        margin-top: 30px;
-        height: 545px;
+        height: 525px;
     }
     .detLeft {
         width: 383px;
-        height: 545px;
+        height: 525px;
         background-color: #fff;
         float: left;
         text-align: left;
@@ -42,18 +53,18 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        margin-top: 65px;
+        margin-top: 55px;
     }
     .detLeft .delName li {
         width: 383px;
         height: 86px;
-        padding-top: 12.5px;
+        padding-top: 12px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        color: #666;
     }
     .detLeft .delName li:hover {
-        /*border: 1px solid #b2d8ff;*/
         box-shadow: 2px 2px 20px #b2d8ff;
         color: #2b90ed;
     }
@@ -70,16 +81,17 @@
         height: 40px;
         line-height: 40px;
         text-align: center;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        border: 2px solid #3388ff;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        border: 1px solid #3388ff;
         margin-left: 61px;
         margin-top: 24px;
         background: #3388ff;
     }
     .detLeft .delName .moreBtn:hover{
         background-color: #1674f7;
+        border: 1px solid #1674f7;
     }
     .detLeft .delName span{
         margin-left: 28px;
@@ -167,6 +179,8 @@
         position: absolute;
         top: 38px;
         left: 72px;
+        width: 159px;
+        height: 159px;
     }
     .detTab2 .sImg2{
         position: absolute;
@@ -202,26 +216,28 @@
     }
     .actionSuggest h2 {
         font-size: 30px;
-        font-weight: normal;
-        /*margin-top: 100px;*/
+        height: 30px;
+        line-height: 30px;
+        font-weight: 400;
     }
     .actionSuggest p {
         font-size: 14px;
-        margin-top: 33px;
+        line-height: 21px;
+        margin-top: 30px;
         margin-bottom: 30px;
         color: #999;
     }
 
     .actionSuggest .actDet {
-        width: 1100px;
-        height: 403px;
+        width: 1065px;
+        height: 410px;
         margin-top: 80px;
         margin-left: 35px;
     }
 
     .actionSuggest .actDet li {
         width: 193px;
-        height: 403px;
+        height: 410px;
         margin-left: 85px;
         float: left;
 
@@ -256,13 +272,13 @@
         line-height: 40px;
         text-align: center;
         display: block;
-        margin: 84px auto;
+        margin: 84px auto 0;
         background: #3388ff;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         border-radius: 2px;
         font-size: 14px;
-        color: #ffffff;
+        color: #fff;
     }
     .actionSuggest .actBtn:hover{
         background-color: #1674f7;
@@ -285,9 +301,12 @@
     }
     .btData h2 {
         padding-top: 75px;
+        height: 30px;
+        line-height: 30px;
         font-size: 30px;
-        font-weight: normal;
+        font-weight: 400;
         color: #fdfdfd;
+        letter-spacing: 1px;
     }
     .btData .dataItem{
         width: 33%;
@@ -296,30 +315,35 @@
         margin-top: 68px;
     }
     .btData .dataItem h3{
+        height: 43px;
+        line-height: 43px;
         font-size: 43px;
         color: #fdfdfd;
         font-weight: normal;
     }
     .btData .dataItem p{
-        font-size: 15.5px;
+        height: 15px;
+        line-height: 15px;
+        font-size: 15px;
         color: #fdfdfd;
-        margin-top: 14px;
-        font-weight: normal;
+        margin-top: 12px;
+        font-weight: 300;
     }
     .user{
         width: 100%;
-        height: 556px;
     }
     .user .userChd{
         width: 1100px;
-        height: 556px;
         margin: 0 auto;
+        padding-bottom: 105px;
     }
     .user .userChd h2{
-        padding-top: 80px;
+        padding-top: 81px;
         font-size: 30px;
+        height: 30px;
+        line-height: 30px;
         font-weight: normal;
-        color: #333333;
+        color: #333;
         text-align: center;
     }
     .user .userChd img{
@@ -328,10 +352,52 @@
         width: 1064px;
         height: 300px;
     }
+    .indexbanner-box .indexbanner-box-left{
+        float: left;
+        width: 427px;
+        padding-left: 68px;
+        padding-top:103px;
+        height: 322px;
+    }
+    .indexbanner-box .indexbanner-box-right{
+        float: left;
+        width: 575px;
+        padding-right: 30px;
+        height: 425px;
+    }
+    .indexbanner-box-left-tit{
+        line-height: 74px;
+        height: 148px;
+        width: 100%;
+        font-size: 48px;
+        color: #f4f4f4;
+        font-weight: 300;
+    }
+    .indexbanner-box-left-box{
+        margin-top: 31px;
+        height: 34px;
+        width: 120px;
+        line-height: 34px;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #f4f4f4;
+        text-align: center;
+        border: solid 1px #fff;
+    }
 </style>
 
 <div class="indexbanner">
-     <a href="//ltyun.adbaitai.com"><img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ibanner1.png" alt=""></a>
+    <div class="indexbanner-box">
+        <a href="//ltyun.adbaitai.com" target="_blank">
+            <div class="indexbanner-box-left">
+                <div class="indexbanner-box-left-tit">全球首家互动平台<br>定制SAAS服务商</div>
+                <div class="indexbanner-box-left-box">查看更多</div>
+            </div>
+            <div class="indexbanner-box-right">
+                <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/index-banner-1.png" height="425px">
+            </div>
+        </a>
+    </div>
  </div>
 <div class="product">
     <div class="proSuggest">
@@ -385,20 +451,19 @@
                 <div class="detTab2">
                     <div class="bigImg"></div>
                     <div class="sImg1">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/djs.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/djs.png"
+                             style="width:159px;height: 159px;">
                     </div>
                     <div class="sImg2">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/fds.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/fds-1.png"
+                             style="width:149px;height: 149px;">
                     </div>
                 </div>
                 <div class="detTab3">
                     <div class="bigImg"></div>
                     <div class="sImg1">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sjs.png" alt="">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sjs.png">
                     </div>
-                    <!--<div class="sImg2">-->
-                    <!--<img src="../images/1云空间.png" alt="">-->
-                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -422,11 +487,10 @@
                 <li><img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/yxhd.png" alt=""> <span>互动游戏</span></li>
                 <li><img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ggtc.png" alt=""> <span>广告弹窗</span></li>
                 <li><img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ggzldy.png" alt=""> <span>广告主落地页</span></li>
+                <div style="clear: both"></div>
             </ul>
         </div>
-        <!--<div class="actBtn">-->
         <a class="actBtn" href="./laituiInt.html">了解更多</a>
-        <!--</div>-->
     </div>
 
 </div>

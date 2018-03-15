@@ -11,8 +11,8 @@ textarea{resize:none;}
 .headAll{
   width: 100%;
   height: 70px;
-  background-color: #ffffff;
-  border-bottom: 2px solid #edeeed;
+  background-color: #fff;
+  border-bottom: 1px solid #edeeed;
 }
 .headAll .head{
   width: 1100px;
@@ -21,36 +21,28 @@ textarea{resize:none;}
 }
 .head-left{
   float: left;
-  /*width: 405px;*/
-  width: 340px;
-  height: 70px;
-  line-height: 70px;
-  /*margin-left: 205px;*/
+  width: 390px;
+  height: 33px;
+  padding: 18px 0 19px;
+  line-height: 33px;
 }
 .head-left .leftChild{
   display: flex;
-  height: 70px;
-  line-height: 70px;
+  height: 33px;
+  line-height: 33px;
 }
 .head-left span{
-  margin-top: 14px;
-  width: 2px;
-  height: 39px;
-  line-height: 36px;
-  margin-left: 9px;
-  background-color: #cccccc;
+  padding-left:9px;
+  height: 33px;
+  border-right: solid 2px #ccc;
 }
 .head-left b{
-  margin-left: 16px;
+  padding-left: 14px;
+  height: 33px;
+  line-height: 33px;
   font-family: "Songti TC";
   font-size: 28px;
   color: #545454;
-}
-.head-left img{
-  width: 110px;
-  height: 33px;
-  margin: 18px 9px 19px 0;
-  vertical-align: center;
 }
 .head-center{
   float: left;
@@ -58,31 +50,29 @@ textarea{resize:none;}
   line-height: 70px;
 }
 
-.head-center ,.head-center .centerUl{
+.head-center, .head-center .centerUl{
   width: auto;
   height: 70px;
-  line-height: 70px;
   display: inline-block;
+  font-size: 0;
 }
 
 .head-center .centerUl li{
-  width: 60px;
   float: left;
   height: 70px;
-  line-height: 70px;
-  margin-left: 33px;
   display: inline-block;
-  text-align: center;
   position: relative;
-  /*border-bottom: 2px solid red;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .head-center .centerUl a{
   display: inline-block;
-  width: 60px;
   height: 70px;
+  padding: 0 16px;
+  line-height: 70px;
+  font-size: 14px;
+  color: #333;
 }
 #actLine{
   width: 0px;
@@ -91,32 +81,25 @@ textarea{resize:none;}
   background-color: #e83928;
   margin: 0 auto;
   position: absolute;
-  top: 66px;
+  top: 67px;
   left: 0px;
   right: 0px;
   transition: width 1s linear;
-  -webkit-transition: width 0.5s linear;
-  -moz-transition: width 0.5s linear;
-  -ms-transition: width 0.5s linear;
-  -o-transition: width 0.5s linear;
-  transition: width 0.5s linear;
+  -webkit-transition: width 0.3s linear;
+  -moz-transition: width 0.3s linear;
+  -ms-transition: width 0.3s linear;
+  -o-transition: width 0.3s linear;
+  transition: width 0.3s linear;
 }
 .centerLi:hover #actLine{
   width:60px;
 }
-.head-center li a{
-  font-family: "PingFang SC";
-  font-size: 14px;
-  color: #333;
-}
-.head-center li:first-child{
-  margin-left: 0;
-}
+
 .head-right{
   float: left;
   height: 70px;
   line-height: 70px;
-  margin-left: 55px;
+  margin-left: 52px;
 }
 .head-right .login,.register{
   width: 79px;
@@ -290,14 +273,14 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 /*footer部分*/
 footer{
   width: 100%;
-  height: 395px;
+  /*height: 395px;*/
   background-color: #373d45;
 }
 footer section{
-  width: 1120px;
+  width: 1064px;
+  padding: 0 18px;
   height: 310px;
-  margin-left: 205px;
-  border-bottom: 1px solid #5a5f64;
+  margin: 0 auto;
 }
 section .foot-left{
   width: 606px;
@@ -308,9 +291,6 @@ section .foot-center{
   width: auto;
   float: left;
   margin-top: 75px;
-}
-section .foot-center h4{
-  margin-top: 17px;
 }
 section .foot-right{
   float: right;
@@ -323,32 +303,38 @@ section .foot-right img{
   border: none;
 }
 section h3{
-  font-family: "PingFang SC";
+  height: 20px;
+  line-height: 20px;
   font-size: 20px;
+  font-weight: 300;
   color: #fff;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
+}
+section h4{
+  margin-top:25px;
+  color: #dcdcdd;
 }
 section h4,section h4 a{
-  font-family: "PingFang SC";
   font-size: 14px;
   color: #dcdcdd;
   font-weight: normal;
-}
-section h4{
-  margin-top: 28px;
 }
 section .foot-address{
   height: 20px;
   margin-top: 8px;
 }
 footer .declare p{
-  width: 1120px;
-  margin-left: 205px;
-  font-family: "PingFang SC";
+  border-top: 1px solid #5a5f64;
+  width: 90%;
+  min-width: 1100px;
+  margin: 20px auto 0 auto;
+  height: 72px;
+  line-height: 72px;
   font-size: 14px;
   color: #dcdcdd;
-  margin-top: 20px;
-  text-align:center
+  text-align:center;
+  padding-bottom: 8px;
+  font-weight: 300;
 }
 
 

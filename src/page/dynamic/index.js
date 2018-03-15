@@ -10,11 +10,7 @@ require('../../component/layout/common');
 
     $('.getMore').click(function () {
         $(".show").show();
-        $('.getMore').html("没有更多了").css({"color":"#3333"}).css("border","none");
-        // $('.getMore').css({"color":"#3333"});
-        // $('.getMore').css("border","none");
-
+        $('.getMore').css("display","none");
+        $(".noMore").css("display", "block")
     })
 })()
-
-console.log('测试输出');

@@ -10,12 +10,11 @@ require('../../component/layout/common');
                 oNavTab[index].style.display = "none";
                 oNavUL[index].style.borderBottom = "none";
             }
-            console.log(i);
+
             oNavUL[i].style.borderBottom = "2px solid red";
             oNavTab[i].style.display = "block";
         }
     }
-    console.log(oNavTab);
     // 地图功能
     var map = new BMap.Map("companyAdd",{minZoom:15,maxZoom:18}); // 创建Map实例,设置地图允许的最小/大级别
     map.centerAndZoom(new BMap.Point(120.131383,30.277801),15);
@@ -29,8 +28,8 @@ require('../../component/layout/common');
     function theLocation(){
         map.clearOverlays();
         var new_point = new BMap.Point(120.131383,30.277801);
-        var marker = new BMap.Marker(new_point);  // 创建标注
-        map.addOverlay(marker);              // 将标注添加到地图中
+        var marker = new BMap.Marker(new_point);    // 创建标注
+        map.addOverlay(marker);                     // 将标注添加到地图中
         map.panTo(new_point);
     }
 })();
