@@ -3,13 +3,15 @@
  */
 $(document).ready(function(){
     //head部分
-    var oLi = $(".centerLi")[0];
+    /*var oLi = $(".centerLi")[0];
     $(".centerLi").click(function () {
         var _this = $(this);
         setTimeout(function () {
             _this.css('borderBottom','4px solid #e83928');
         },500);
-    });
+    });*/
+    var pageFlag = $(".pageFlag").text();
+    $(".centerLi #actLine").eq(pageFlag).css('width','60px');
 
     $(".register").click(function(){
         $('body').css('overflow','hidden');
