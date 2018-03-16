@@ -1,1 +1,0 @@
-webpackJsonp([3],{6:function(s,i,o){"use strict";o(0),o(1),$(".tabchoose_main>li").click(function(){$(this).addClass("choose").siblings().removeClass("choose");var s=$(".chooseListNum").index($(this));$(".tab_main_content>div").eq(s).show().siblings().hide()})}},[6]);
