@@ -11,6 +11,7 @@ $(document).ready(function(){
         },500);
     });*/
     var pageFlag = $(".pageFlag").text();
+    $(".centerLi a").eq(pageFlag).css('color','#e83928');
     $(".centerLi #actLine").eq(pageFlag).css('width','60px');
 
     $(".register").click(function(){
