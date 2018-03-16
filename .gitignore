@@ -1,5 +1,5 @@
 .DS_Store
 exchange
 .idea
+dist/
 node_modules
-dist
