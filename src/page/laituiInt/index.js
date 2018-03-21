@@ -1,6 +1,23 @@
 require('../../component/layout/reset.css');
 // require ('./index.css');
 require('../../component/layout/common');
+
+function createSwiper(type){
+    var container;
+    if(type == 1){
+        container = '#swiperHD';
+    }else if(type == 2){
+        container = '#swiperDH';
+    }
+    var mySwiper = new Swiper(container, {
+        loop : true,
+        autoplay: 3000,//可选选项，自动滑动,
+        pagination : '.swiper-pagination',
+        paginationClickable :true,
+        autoplayDisableOnInteraction: false
+    });
+    return mySwiper;
+}
 var $Dom = function (dom) {
     return document.querySelectorAll(dom);
 }
@@ -18,7 +35,6 @@ $('.topUlList').click(function () {
     $(this).siblings().children('img').css("opacity","0.6");
 })
 
-
 /*
  * phone图片
  */
@@ -31,8 +47,10 @@ $('.btnLeft').click(function () {
 $('.btnRight').click(function () {
     $(this).addClass("btnActive");
     $('.btnLeft').removeClass("btnActive");
-    $('.contentImg').animate({left:'-259px'});
+    $('.contentImg').animate({left:'-228px'});
 })
+var swiper1, swiper2;
+swiper1 = createSwiper(1);
 for(let i = 0; i <= familyLi.length - 1 ;i ++){
     oContent[i].style.display = "none";
     oContent[0].style.display = "block";
@@ -44,11 +62,23 @@ for(let i = 0; i <= familyLi.length - 1 ;i ++){
             oContent[index].style.display = "none";
         }
         oContent[i].style.display = 'block';
-        if(i == 0 || i == 3){
-            $Dom('.phoneBtn')[0].style.display = "block";
-        }else{
-            $Dom('.phoneBtn')[0].style.display = "none";
-            return false;
+        if(i == 0){
+            if(swiper1 != undefined) {
+                swiper1.destroy();
+            }
+            /*if(swiper2 != undefined) {
+                swiper2.destroy();
+            }*/
+            swiper1 = createSwiper(1);
+        }
+        if(i == 3){
+            if(swiper2 != undefined) {
+                swiper2.destroy();
+            }
+            /*if(swiper1 != undefined) {
+                swiper1.destroy();
+            }*/
+            swiper2 = createSwiper(2);
         }
     }
 }

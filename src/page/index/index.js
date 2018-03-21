@@ -1,20 +1,53 @@
 require('../../component/layout/reset.css');
 require('../../component/layout/common');
-window.onload=function () {
+$(document).ready(function () {
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 4000,//可选选项，自动滑动
+        loop : true,
+        loopAdditionalSlides : 1,
+        pagination : '.swiper-pagination',
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        // direction:'vertical', //垂直方向换页
 
+        /* 初始化animate */
+        onInit: function(swiper){
+            swiperAnimateCache(swiper);  //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    });
+});
+window.onload=function () {
     //选项卡
     var oDelLi = document.querySelectorAll('.delName li');
     var oTab = document.querySelector('.detRight').children;
+    function displayNone(){
+        for(var index = 0;index <= 3;index++ ){
+            oTab[index].style.display = 'none';
+        };
+    }
     for(let i = 0;i <= 3;i ++){
-        oTab[i].style.display = 'none';
-        oTab[0].style.display = "block";
-        oDelLi[i].onmouseover = function (e) {
-            for(var index = 0;index <= 3;index++ ){
-                oTab[index].style.display = 'none';
+        var flag = [true, true, true, true];
+        $('.delName li').eq(i).hover(function (e) {
+            if(flag[i]){
+                flag[i] = false;
+                displayNone();
+                oTab[i].style.display = 'block';
+                $(".detTab").eq(i).find('.sImg').each(function(){
+                    $(this).addClass('animateFrame');
+                })
             };
-            var e = event || window.event;
+        })
+        $('.delName li').eq(i).mouseleave(function (e) {
+            flag[i] = true;
             oTab[i].style.display = 'block';
-        }
+            $(".detTab").eq(i).find('.sImg').each(function(){
+                $(this).removeClass('animateFrame');
+            })
+        })
     }
 
     //数字滚动

@@ -181,41 +181,40 @@
     .appSceneAll .appScene .sceneRight .phone {
         width: 450px;
         height: 777px;
-        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/phone.png") 0 0 no-repeat;
+        background: url("http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-yycj-bg.png") 0 0 no-repeat;
         background-size: 450px 777px;
         position: relative;
         top: 0;
         left: 0;
     }
     .appSceneAll .appScene .sceneRight .phone .phoneContent {
-        width: 258px;
-        height: 471px;
+        width: 228px;
+        height: 415px;
         position: absolute;
-        top: 148px;
-        left: 97px;
-        overflow: hidden;
+        top: 185px;
+        left: 113.5px;
     }
     .appSceneAll .appScene .sceneRight .phone .phoneContent .contentImg {
-        width: 516px;
-        height: 471px;
+        width: 228px;
+        height: 415px;
         position: relative;
     }
-    .appSceneAll .appScene .sceneRight .phone .phoneContent .contentImg .allImg {
+    /*.appSceneAll .appScene .sceneRight .phone .phoneContent .contentImg .allImg {
         width: 516px;
-        height: 471px;
+        height: 415px;
         position: absolute;
-    }
+    }*/
     .appSceneAll .appScene .sceneRight .phone .phoneContent .contentImg img {
-        width: 258px;
-        height: 471px;
-        float: left;
+        width: 228px;
+        height: 415px;
+        /*float: left;*/
     }
     .appSceneAll .appScene .sceneRight .phone .phoneBtn {
         width: 100px;
         height: 25px;
         position: absolute;
         left: 183px;
-        bottom: 28px;
+        bottom: 52px;
         text-align: center;
         font-size: 0;
     }
@@ -524,6 +523,29 @@
         margin-top: 44px;
         border: solid 1px #333;
     }
+    .swiper-container{
+        width: 228px;
+        height: 550px;
+    }
+    .swiper-container .swiper-pagination{
+        bottom: 16px;
+        height: 16px;
+    }
+    .swiper-container .swiper-pagination .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+        border-radius: 14px;
+        background-color: rgba(255,255,255,0);
+        border: 1px solid #79c5ff;
+        opacity: 1;
+    }
+    .swiper-container .swiper-pagination .swiper-pagination-bullet-active{
+        background-color: #1599ff;
+        border: 1px solid #1599ff;
+        width: 24px;
+        height: 15px;
+
+    }
 </style>
 <div class="lthd-banner">
     <div class="lthd-banner-main">
@@ -602,42 +624,60 @@
                 <!--互动广告-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <div class="allImg">
-                            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/hdyx.png">
-                            <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/huyx1.png">
+                        <div id="swiperHD" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-yycj-hd-1.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-yycj-hd-2.png">
+                                </div>
+                            </div>
+                            <!-- 如果需要分页器 -->
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
                 <!--电商中心-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dszx.png">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-yycj-ds.png">
                     </div>
                 </div>
                 <!--游戏中心-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/yxzx.png">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-yycj-yx.png">
                     </div>
                 </div>
                 <!--导航页-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dhy.png">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dhy1.png">
+                        <div id="swiperDH" class="swiper-container" style="overflow: hidden;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-yycj-dh-1.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-yycj-dh-2.png">
+                                </div>
+                            </div>
+                            <!-- 如果需要分页器 -->
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
                 </div>
                 <!--内涵段子-->
                 <div class="phoneContent">
                     <div class="contentImg">
-                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/nhdz1.png">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/lthd-yycj-nh.png">
                     </div>
                 </div>
 
-                <div class="phoneBtn">
+                <!--<div class="phoneBtn">
                     <span class="btnLeft btnActive"></span>
                     <span class="btnRight"></span>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -736,3 +776,4 @@
         <a href="javascript:;">申请入驻</a>
     </div>
 </div>
+<script src = '//oss.ltcdn.cc/Website/Js/swiper-3.4.2.jquery.min.js'></script>

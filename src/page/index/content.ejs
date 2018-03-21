@@ -9,11 +9,6 @@
         margin: 0 auto;
         height: 425px;
     }
-    .indexbanner .indexbanner-box a{
-        width: 100%;
-        height: 425px;
-        display: block;
-    }
     .product {
         width: 100%;
     }
@@ -107,7 +102,7 @@
         width: 810px;
         height: 483px;
     }
-    .detRight .detTab,.detRight .detTab1,.detRight .detTab2,.detRight .detTab3{
+    .detRight .detTab{
         width: 810px;
         height: 483px;
         position: relative;
@@ -273,15 +268,14 @@
     }
     .indexbanner-box .indexbanner-box-left{
         float: left;
-        width: 427px;
+        width: 432px;
         padding-left: 68px;
         padding-top:103px;
         height: 322px;
     }
     .indexbanner-box .indexbanner-box-right{
         float: left;
-        width: 575px;
-        padding-right: 30px;
+        width: 600px;
         height: 425px;
     }
     .indexbanner-box-left-tit{
@@ -293,6 +287,7 @@
         font-weight: 300;
     }
     .indexbanner-box-left-box{
+        display: block;
         margin-top: 31px;
         height: 34px;
         width: 120px;
@@ -303,21 +298,145 @@
         text-align: center;
         border: solid 1px #fff;
     }
-</style>
+    a.indexbanner-box-left-box:hover{
+        background: #fff;
+        color: #333;
+    }
+    .swiper-container{
+        width: 100%;
+        height: 425px;
+        overflow: hidden;
+    }
+    .swiper-container .swiper-pagination .swiper-pagination-bullet {
+        width: 50px;
+        height: 3px;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 0;
+    }
+    .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+    .swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        background-position: center;
+        margin-top: -30px;
+    }
+    .swiper-container .swiper-button-prev{
+        background-image: url(http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/arrow-pre.png);
+        left: 50%;
+        margin-left: -635px;
+    }
+    .swiper-container .swiper-button-next{
+        background-image: url(http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/arrow-next.png);
+        left: 50%;
+        margin-left: 575px;
+    }
+    .animateFrame {
+        animation: fadeInUpFrame 0.8s forwards;
+    }
+    @-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+        }
 
-<div class="indexbanner">
-    <div class="indexbanner-box">
-        <a href="//ltyun.adbaitai.com" target="_blank">
-            <div class="indexbanner-box-left">
-                <div class="indexbanner-box-left-tit">全球首家互动平台<br>定制SAAS服务商</div>
-                <div class="indexbanner-box-left-box">查看更多</div>
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes fadeInUpFrame {
+        from {
+            opacity: 1;
+            -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+    }
+    @-webkit-keyframes fadeInUpFrame {
+        from {
+            opacity: 1;
+            -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+    }
+    .detTab .sImg{
+        transition:top 0.2s linear;
+        -webkit-transition:top 0.2s linear;
+        -moz-transition:top 0.2s linear;
+        -o-transition:top 0.2s linear;
+    }
+</style>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="indexbanner">
+                <div class="indexbanner-box">
+                    <div class="indexbanner-box-left ani" swiper-animate-effect="fadeInRight"
+                         swiper-animate-duration="0.3s" swiper-animate-delay="0s">
+                        <div class="indexbanner-box-left-tit">全球首家互动平台<br>定制SAAS服务商</div>
+                        <a class="indexbanner-box-left-box" href="//ltyun.adbaitai.com" target="_blank">查看更多</a>
+                    </div>
+                    <div class="indexbanner-box-right ani" swiper-animate-effect="fadeInUp"
+                         swiper-animate-duration="0.8s" swiper-animate-delay="0s">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/banner-pic1.png"
+                             height="425px">
+                    </div>
+                </div>
             </div>
-            <div class="indexbanner-box-right">
-                <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/index-banner-1.png" height="425px">
+        </div>
+        <div class="swiper-slide">
+            <div class="indexbanner" style="background:#1e2430;">
+                <div class="indexbanner-box">
+                    <div class="indexbanner-box-left ani" swiper-animate-effect="fadeInRight"
+                         swiper-animate-duration="0.3s" swiper-animate-delay="0s">
+                        <div class="indexbanner-box-left-tit">让每家广告公司都<br>拥有自己的广告平台</div>
+                        <a class="indexbanner-box-left-box" href="//ltyun.adbaitai.com" target="_blank">查看更多</a>
+                    </div>
+                    <div class="indexbanner-box-right ani" swiper-animate-effect="fadeInUp"
+                         swiper-animate-duration="0.8s" swiper-animate-delay="0s">
+                        <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/banner-pic2.png"
+                             height="425px">
+                    </div>
+                </div>
             </div>
-        </a>
+        </div>
     </div>
- </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 <div class="product">
     <div class="proSuggest">
         <h2>用来推云，快速搭建自己的互动广告平台</h2>
@@ -326,19 +445,19 @@
         <div class="sugDetail">
             <div class="detLeft">
                 <ul class="delName">
-                    <li>
+                    <li id="0">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/dlym.png">
                         <span>独立域名、云空间</span>
                     </li>
-                    <li>
+                    <li id="1">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/logo.png">
                         <span>独立LOGO、独立VI</span>
                     </li>
-                    <li>
+                    <li id="2">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/jffs.png">
                         <span>灵活计费方式</span>
                     </li>
-                    <li>
+                    <li id="3">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sj.png">
                         <span>独立数据中心</span>
                     </li>
@@ -348,44 +467,44 @@
                 </ul>
             </div>
             <div class="detRight">
-                <div class="detTab">
+                <div class="detTab" style="display: block">
                     <div class="bigImg">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ymBig.png" width="100%">
                     </div>
-                    <div class="sImg1" style="position: absolute;left:70px;bottom:92px;width:246px;height:222px;">
+                    <div class="sImg" style="position: absolute;left:70px;top:169px;width:246px;height:222px;">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/yms.png" width="100%">
                     </div>
-                    <div class="sImg2" style="position: absolute;right:33px;top:45px;width:246px;height:222px;">
+                    <div class="sImg" style="position: absolute;right:33px;top:45px;width:246px;height:222px;">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/ykjs.png" width="100%">
                     </div>
                 </div>
-                <div class="detTab1">
+                <div class="detTab">
                     <div class="bigImg">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/viBig.png" width="100%">
                     </div>
-                    <div class="sImg1" style="position: absolute;left:21px;bottom:94px;width:199px;height:156px;">
+                    <div class="sImg" style="position: absolute;left:21px;top:233px;width:199px;height:156px;">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/logos.png" width="100%">
                     </div>
-                    <div class="sImg2" style="position: absolute;right:90px;top:18px;width:156px;height:176px;">
+                    <div class="sImg" style="position: absolute;right:90px;top:18px;width:156px;height:176px;">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/vis.png" width="100%">
                     </div>
                 </div>
-                <div class="detTab2">
+                <div class="detTab">
                     <div class="bigImg">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/jfBig.png" width="100%">
                     </div>
-                    <div class="sImg1" style="position: absolute;left:104px;top:30px;width:159px;height:159px;">
+                    <div class="sImg" style="position: absolute;left:104px;top:30px;width:159px;height:159px;">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/djs.png" width="100%">
                     </div>
-                    <div class="sImg2" style="position: absolute;right:70px;top:38px;width:159px;height:159px;">
+                    <div class="sImg" style="position: absolute;right:70px;top:38px;width:159px;height:159px;">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/fds-1.png" width="100%">
                     </div>
                 </div>
-                <div class="detTab3">
+                <div class="detTab">
                     <div class="bigImg">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sjBig.png" width="100%">
                     </div>
-                    <div class="sImg1" style="position: absolute;right:105px;bottom:13px;width:296px;height:256px;">
+                    <div class="sImg" style="position: absolute;right:105px;top:214px;width:296px;height:256px;">
                         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/sjs.png" width="100%">
                     </div>
                 </div>
@@ -447,3 +566,5 @@
         <img src="http://imgcow.oss-cn-hangzhou.aliyuncs.com/btweb/laituiweb/mtyh.png" alt="">
     </div>
 </div>
+<script src = '//oss.ltcdn.cc/Website/Js/swiper-3.4.2.jquery.min.js'></script>
+<script src = '//oss.ltcdn.cc/Website/Js/swiper.animate1.0.3.min.js'></script>
