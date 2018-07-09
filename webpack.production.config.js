@@ -10,6 +10,7 @@ var cssPlugin = new ExtractTextPlugin("style.css");
 module.exports={
     entry: {
         'index': './src/page/index/index.js',
+        'loading': './src/page/loading/index.js',
         'laituiInt': './src/page/laituiInt/index.js',
         'about': './src/page/about/index.js',
         'dynamic': './src/page/dynamic/index.js',

@@ -10,6 +10,7 @@ var path = require('path'),
 module.exports={
     entry: {
         'index': './src/page/index/index.js',
+        'loading': './src/page/loading/index.js',
         'laituiInt': './src/page/laituiInt/index.js',
         'about': './src/page/about/index.js',
         'dynamic': './src/page/dynamic/index.js',
@@ -31,6 +32,15 @@ module.exports={
             title: '',
             template: path.resolve(PAGE_PATH, 'index/html.js'),
             filename: 'index.html',
+            //chunks这个参数告诉插件要引用entry里面的哪几个入口
+            chunks: ['commonjs','index'],
+            //要把script插入标签里
+            inject: 'body'
+        }),
+        new htmlWebpackPlugin({
+            title: '',
+            template: path.resolve(PAGE_PATH, 'loading/html.js'),
+            filename: 'loading.html',
             //chunks这个参数告诉插件要引用entry里面的哪几个入口
             chunks: ['commonjs','index'],
             //要把script插入标签里
